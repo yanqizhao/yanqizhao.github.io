@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-22T03:34:18.509Z</updated>
+  <updated>2020-12-23T03:13:04.197Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,15 +21,14 @@
     <link href="http://example.com/2020/12/22/JavaScript/"/>
     <id>http://example.com/2020/12/22/JavaScript/</id>
     <published>2020-12-22T03:34:02.000Z</published>
-    <updated>2020-12-22T03:34:18.509Z</updated>
+    <updated>2020-12-23T03:13:04.197Z</updated>
     
-    <content type="html"><![CDATA[<p>hello</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var let const"></a>var let const</h2><h2 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h2><h2 id=""><a href="#" class="headerlink" title="==="></a>===</h2><h2 id="-1"><a href="#-1" class="headerlink" title="!=="></a>!==</h2><h2 id="push-pop"><a href="#push-pop" class="headerlink" title="push pop"></a>push pop</h2><h2 id="shift-unshift"><a href="#shift-unshift" class="headerlink" title="shift unshift"></a>shift unshift</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;hello&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h2 id=&quot;var-let-const&quot;&gt;&lt;a href=&quot;#var-let-const&quot; class=&quot;headerlink&quot; title=&quot;var let const&quot;&gt;&lt;/a&gt;var let const&lt;/h2&gt;&lt;h2 id=&quot;undefined-null&quot;&gt;&lt;a hr</summary>
       
     
     
