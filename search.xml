@@ -46,8 +46,20 @@
   <entry>
     <title>React Native 学习资料</title>
     <url>/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<p>1 小时入门教程(购物清单)：<a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p>
-<p>2 小时入门教程：<a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p>
+    <content><![CDATA[<h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p>
+<h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p>
+<h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p>
+<p><code>React-Native/React/Redux</code></p>
+<p><code>Prettier</code></p>
+<p><code>Material Icon Theme</code></p>
+<h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p>
+<h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p>
+<h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote>
+<ol>
+<li>运行时会检查拼写</li>
+<li>Facebook 做了优化</li>
+</ol>
+</blockquote>
 ]]></content>
   </entry>
   <entry>
@@ -59,6 +71,8 @@
   <entry>
     <title>React Native</title>
     <url>/2020/12/23/React%20Native/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h2><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p>
+<h2 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h2><p><code>⌥ + ⌘ + I</code></p>
+]]></content>
   </entry>
 </search>
