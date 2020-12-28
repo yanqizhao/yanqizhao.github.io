@@ -42,14 +42,15 @@
     <link href="http://example.com/2020/12/23/React%20Native/"/>
     <id>http://example.com/2020/12/23/React%20Native/</id>
     <published>2020-12-23T09:35:52.581Z</published>
-    <updated>2020-12-25T07:34:05.300Z</updated>
+    <updated>2020-12-28T09:42:58.624Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h2><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p><h2 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h2><p><code>⌥ + ⌘ + I</code></p>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="Flexbox"><a href="#Flexbox" class="headerlink" title="Flexbox"></a>Flexbox</h2><h3 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h3><p>数值，子元素的主轴填充，一个区域根据每个元素 flex 值的和进行划分。</p><h3 id="flexDirection"><a href="#flexDirection" class="headerlink" title="flexDirection"></a>flexDirection</h3><p>主轴方向。</p><h5 id="column-默认"><a href="#column-默认" class="headerlink" title="column(默认)"></a>column(默认)</h5><p>竖直方向上对齐。</p><h5 id="column-reverse"><a href="#column-reverse" class="headerlink" title="column-reverse"></a>column-reverse</h5><p>竖直方向下对齐。</p><h5 id="row"><a href="#row" class="headerlink" title="row"></a>row</h5><p>水平方向左对齐。</p><h5 id="row-reverse"><a href="#row-reverse" class="headerlink" title="row-reverse"></a>row-reverse</h5><p>水平方向右对齐。</p><h3 id="justifyContent"><a href="#justifyContent" class="headerlink" title="justifyContent"></a>justifyContent</h3><p>子元素在主轴上的排列方式。</p><p>主轴没有 <code>stretch</code>、<code>baseline</code>属性。</p><h5 id="flex-start-默认"><a href="#flex-start-默认" class="headerlink" title="flex-start(默认)"></a>flex-start(默认)</h5><p>左对齐或上对齐。</p><h5 id="flex-end"><a href="#flex-end" class="headerlink" title="flex-end"></a>flex-end</h5><p>右对齐或下对齐。</p><h5 id="center"><a href="#center" class="headerlink" title="center"></a>center</h5><p>居中对齐。</p><h5 id="space-between"><a href="#space-between" class="headerlink" title="space-between"></a>space-between</h5><p>无边距的平均分布。</p><h5 id="space-around"><a href="#space-around" class="headerlink" title="space-around"></a>space-around</h5><p>有边距的平均分布。</p><h5 id="space-evenly"><a href="#space-evenly" class="headerlink" title="space-evenly"></a>space-evenly</h5><p>完全平均分布。</p><h3 id="alignItems"><a href="#alignItems" class="headerlink" title="alignItems"></a>alignItems</h3><p>子元素在次轴上的排列方式，只作用于当前行或当前列(可换行时)。</p><p>次轴没有<code>space-between</code>、<code>space-around</code>、<code>space-evenly</code>属性。</p><h5 id="streach-默认"><a href="#streach-默认" class="headerlink" title="streach(默认)"></a>streach(默认)</h5><p>主轴方向上完全拉伸，如果设置了宽度 or 高度则失效。</p><p><img src="media/stretch.png" alt="stretch"></p><h5 id="flex-start"><a href="#flex-start" class="headerlink" title="flex-start"></a>flex-start</h5><p>左对齐或上对齐。</p><p><img src="media/flex-start.png" alt="flex-start"></p><h5 id="flex-end-1"><a href="#flex-end-1" class="headerlink" title="flex-end"></a>flex-end</h5><p>右对齐或下对齐。</p><h5 id="center-1"><a href="#center-1" class="headerlink" title="center"></a>center</h5><p>居中对齐。</p><h5 id="baseline"><a href="#baseline" class="headerlink" title="baseline"></a>baseline</h5><p>左对齐或上对齐，基线为所有元素的最高点。</p><p><img src="media/baseline.png" alt="baseline"></p><h3 id="flexWrap"><a href="#flexWrap" class="headerlink" title="flexWrap"></a>flexWrap</h3><h5 id="nowrap"><a href="#nowrap" class="headerlink" title="nowrap"></a>nowrap</h5><p>不换行。</p><h5 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h5><p>换行。</p><p><img src="media/wrap.png" alt="wrap"></p><h5 id="wrap-reverse"><a href="#wrap-reverse" class="headerlink" title="wrap-reverse"></a>wrap-reverse</h5><p>逆序换行。</p><h3 id="alignContent"><a href="#alignContent" class="headerlink" title="alignContent"></a>alignContent</h3><p>子元素在次轴上的排列方式，全局而非当前行或当前列，只在可换行时有效。</p><h3 id="flexBasis"><a href="#flexBasis" class="headerlink" title="flexBasis"></a>flexBasis</h3><p>数值，主轴的默认宽度 or 高度，如果同时设置了宽度 or 高度，会覆盖宽度 or 高度。</p><h3 id="flexGrow"><a href="#flexGrow" class="headerlink" title="flexGrow"></a>flexGrow</h3><p>数值，填充剩余可用空间，<code>0</code>为默认值，相当于没有设置该属性，可为<code>&gt;=0</code>的浮点数，小于<code>1</code>的值代表占据宽度或高度的比例。</p><p><img src="media/flexGrow.png" alt="flexGrow"></p><h3 id="flexShrink"><a href="#flexShrink" class="headerlink" title="flexShrink"></a>flexShrink</h3><p>数值，没有设置换行时，部分元素会被挤出屏幕，设置该属性为<code>1</code>后可为当前元素分配剩余可用空间。</p><p><img src="media/flexShrink-1.png" alt="flexShrink-1"></p><p><img src="media/flexShrink-2.png" alt="flexShrink-2"></p><p><img src="media/flexShrink-3.png" alt="flexShrink-3"></p><h3 id="top-bottom-left-right-position"><a href="#top-bottom-left-right-position" class="headerlink" title="top bottom left right position"></a>top bottom left right position</h3><p>后布局的元素会覆盖先布局的元素。</p><h4 id="position"><a href="#position" class="headerlink" title="position"></a>position</h4><h5 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h5><p>相对位置，默认值。</p><h5 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h5><p>绝对位置，会影响其他子元素。</p><p><img src="media/top-1.png" alt="top-1"></p><p><img src="media/top-2.png" alt="top-2"></p><p><img src="media/bottom.png" alt="bottom"></p><p><img src="media/left.png" alt="left"></p><p><img src="media/right.png" alt="right"></p><p><img src="media/absolute.png" alt="absolute"></p><p><img src="media/relative.png" alt="relative"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;iOS-模拟器快捷键失效&quot;&gt;&lt;a href=&quot;#iOS-模拟器快捷键失效&quot; class=&quot;headerlink&quot; title=&quot;iOS 模拟器快捷键失效&quot;&gt;&lt;/a&gt;iOS 模拟器快捷键失效&lt;/h2&gt;&lt;p&gt;&lt;code&gt;I/O -&amp;gt; Input -&amp;gt; Se</summary>
+    <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;Flexbox&quot;&gt;&lt;a href=&quot;#Flexbox&quot; class=&quot;headerlink&quot; title=&quot;Flexbox&quot;&gt;&lt;/a&gt;Flexbox&lt;/h2&gt;&lt;h3 id=&quot;flex&quot;&gt;&lt;a href=&quot;#flex&quot; class=&quot;hea</summary>
       
     
     
@@ -62,9 +63,9 @@
     <link href="http://example.com/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
     <id>http://example.com/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</id>
     <published>2020-12-23T09:34:00.413Z</published>
-    <updated>2020-12-28T03:02:41.698Z</updated>
+    <updated>2020-12-28T09:45:37.717Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p><h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p><h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p><p><code>React-Native/React/Redux</code></p><p><code>Prettier</code></p><p><code>Material Icon Theme</code></p><h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p><h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p><h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p><h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote><ol><li>运行时会检查拼写</li><li>Facebook 做了优化</li></ol></blockquote>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p><h3 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h3><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p><h3 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h3><p><code>⌥ + ⌘ + I</code></p><h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p><h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p><p><code>React-Native/React/Redux</code></p><p><code>Prettier</code></p><p><code>Material Icon Theme</code></p><h4 id="Redux-快捷键"><a href="#Redux-快捷键" class="headerlink" title="Redux 快捷键"></a>Redux 快捷键</h4><h5 id="rsf"><a href="#rsf" class="headerlink" title="rsf"></a>rsf</h5><p>引入模块&amp;创建函数</p><h5 id="rnss"><a href="#rnss" class="headerlink" title="rnss"></a>rnss</h5><p>创建 StyleSheet</p><h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p><h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p><h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p><h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote><ol><li>运行时会检查拼写</li><li>Facebook 做了优化</li></ol></blockquote>]]></content>
     
     
       
@@ -83,7 +84,7 @@
     <link href="http://example.com/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
     <id>http://example.com/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</id>
     <published>2020-12-23T08:52:17.277Z</published>
-    <updated>2020-12-25T03:28:31.192Z</updated>
+    <updated>2020-12-28T03:11:19.047Z</updated>
     
     <content type="html"><![CDATA[<p>3 小时入门教程(基础语法)：<a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></p>]]></content>
     
@@ -92,6 +93,35 @@
       
     <summary type="html">&lt;p&gt;3 小时入门教程(基础语法)：&lt;a href=&quot;https://www.youtube.com/watch?v=PkZNo7MFNFg&quot;&gt;https://www.youtube.com/watch?v=PkZNo7MFNFg&lt;/a&gt;&lt;/p&gt;
 </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 学习记录</title>
+    <link href="http://example.com/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://example.com/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-12-23T08:52:17.277Z</published>
+    <updated>2020-12-28T03:12:15.493Z</updated>
+    
+    <content type="html"><![CDATA[<table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.22 12.23</td><td>语法 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;12.22 12.23&lt;/td&gt;
+&lt;td&gt;语法 &lt;a href=&quot;https://www.youtube.com/watch?v</summary>
       
     
     
