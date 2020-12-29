@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-29T11:24:17.433Z</updated>
+  <updated>2020-12-29T11:39:20.691Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2020/12/29/TypeScript/"/>
     <id>http://example.com/2020/12/29/TypeScript/</id>
     <published>2020-12-29T11:19:10.992Z</published>
-    <updated>2020-12-29T11:24:17.433Z</updated>
+    <updated>2020-12-29T11:39:20.691Z</updated>
     
     <content type="html"><![CDATA[<p>是 JavaScript 的超集，有类型系统、接口、泛型、Decorators、丰富的配置选项。</p><p><img src="media/TypeScript.png" alt="TypeScript"></p>]]></content>
     
