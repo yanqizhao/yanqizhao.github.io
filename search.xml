@@ -1,43 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/12/21/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>JavaScript 学习记录</title>
+    <url>/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Date</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12.22 12.23</td>
+<td>语法 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></td>
+</tr>
+</tbody></table>
 ]]></content>
   </entry>
   <entry>
-    <title>React Native 学习资料</title>
-    <url>/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
-    <content><![CDATA[<p>[TOC]</p>
-<h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p>
-<h3 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h3><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p>
-<h3 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h3><p><code>⌥ + ⌘ + I</code></p>
-<h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p>
-<h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p>
-<p><code>React-Native/React/Redux</code></p>
-<p><code>Prettier</code></p>
-<p><code>Material Icon Theme</code></p>
-<h4 id="Redux-Snippets"><a href="#Redux-Snippets" class="headerlink" title="Redux Snippets"></a>Redux Snippets</h4><h5 id="rsf"><a href="#rsf" class="headerlink" title="rsf"></a>rsf</h5><p>引入模块 &amp; 创建函数</p>
-<h5 id="rnss"><a href="#rnss" class="headerlink" title="rnss"></a>rnss</h5><p>创建 StyleSheet</p>
-<h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p>
-<h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p>
-<h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p>
-<h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote>
-<ol>
-<li>运行时会检查拼写</li>
-<li>Facebook 做了优化</li>
-</ol>
+    <title>JavaScript 语法</title>
+    <url>/2020/12/22/JavaScript%20%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var let const"></a>var let const</h2><blockquote>
+<p>let 不能声明多次</p>
 </blockquote>
-]]></content>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">Uncaught ReferenceError: i is not defined </span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="Object-freeze"><a href="#Object-freeze" class="headerlink" title="Object.freeze()"></a>Object.freeze()</h3><h2 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h2><h2 id=""><a href="#" class="headerlink" title="==="></a>===</h2><h2 id="-1"><a href="#-1" class="headerlink" title="!=="></a>!==</h2><h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><h3 id="push-pop"><a href="#push-pop" class="headerlink" title="push pop"></a>push pop</h3><h3 id="shift-unshift"><a href="#shift-unshift" class="headerlink" title="shift unshift"></a>shift unshift</h3><h2 id="Math-random"><a href="#Math-random" class="headerlink" title="Math.random()"></a>Math.random()</h2><h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor()"></a>Math.floor()</h2><h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt()"></a>parseInt()</h2><p>字符串 -&gt; 数值</p>
+<h2 id="Arrow-Function"><a href="#Arrow-Function" class="headerlink" title="Arrow Function"></a>Arrow Function</h2><p>匿名函数</p>
+<h2 id="Rest-Operator"><a href="#Rest-Operator" class="headerlink" title="Rest Operator"></a>Rest Operator</h2><p>参数封装为数组</p>
+<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><p>深拷贝</p>
+<h2 id="use-strict"><a href="#use-strict" class="headerlink" title="use strict"></a>use strict</h2><h2 id="import-requires"><a href="#import-requires" class="headerlink" title="import requires"></a>import requires</h2><h2 id="import-as-…-from-…"><a href="#import-as-…-from-…" class="headerlink" title="import * as … from …"></a>import * as … from …</h2><h2 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h2><p>默认导出，引用时无需使用 <code>&#123;&#125;</code></p>
+<h2 id="import-subtract-from-…"><a href="#import-subtract-from-…" class="headerlink" title="import subtract from …"></a>import subtract from …</h2>]]></content>
   </entry>
   <entry>
     <title>JavaScript 学习资料</title>
@@ -95,23 +102,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>JavaScript 学习记录</title>
-    <url>/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<table>
-<thead>
-<tr>
-<th>Date</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>12.22 12.23</td>
-<td>语法 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></td>
-</tr>
-</tbody></table>
-]]></content>
-  </entry>
-  <entry>
     <title>React Native Flexbox 布局</title>
     <url>/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/</url>
     <content><![CDATA[<p>[TOC]</p>
@@ -164,39 +154,49 @@
 ]]></content>
   </entry>
   <entry>
-    <title>JavaScript 语法</title>
-    <url>/2020/12/22/JavaScript%20%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var let const"></a>var let const</h2><blockquote>
-<p>let 不能声明多次</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">Uncaught ReferenceError: i is not defined </span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h3 id="Object-freeze"><a href="#Object-freeze" class="headerlink" title="Object.freeze()"></a>Object.freeze()</h3><h2 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h2><h2 id=""><a href="#" class="headerlink" title="==="></a>===</h2><h2 id="-1"><a href="#-1" class="headerlink" title="!=="></a>!==</h2><h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><h3 id="push-pop"><a href="#push-pop" class="headerlink" title="push pop"></a>push pop</h3><h3 id="shift-unshift"><a href="#shift-unshift" class="headerlink" title="shift unshift"></a>shift unshift</h3><h2 id="Math-random"><a href="#Math-random" class="headerlink" title="Math.random()"></a>Math.random()</h2><h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor()"></a>Math.floor()</h2><h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt()"></a>parseInt()</h2><p>字符串 -&gt; 数值</p>
-<h2 id="Arrow-Function"><a href="#Arrow-Function" class="headerlink" title="Arrow Function"></a>Arrow Function</h2><p>匿名函数</p>
-<h2 id="Rest-Operator"><a href="#Rest-Operator" class="headerlink" title="Rest Operator"></a>Rest Operator</h2><p>参数封装为数组</p>
-<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><p>深拷贝</p>
-<h2 id="use-strict"><a href="#use-strict" class="headerlink" title="use strict"></a>use strict</h2><h2 id="import-requires"><a href="#import-requires" class="headerlink" title="import requires"></a>import requires</h2><h2 id="import-as-…-from-…"><a href="#import-as-…-from-…" class="headerlink" title="import * as … from …"></a>import * as … from …</h2><h2 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h2><p>默认导出，引用时无需使用 <code>&#123;&#125;</code></p>
-<h2 id="import-subtract-from-…"><a href="#import-subtract-from-…" class="headerlink" title="import subtract from …"></a>import subtract from …</h2>]]></content>
+    <title>Hello World</title>
+    <url>/2020/12/21/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>TypeScript</title>
     <url>/2020/12/29/TypeScript/</url>
     <content><![CDATA[<p>是 JavaScript 的超集，有类型系统、接口、泛型、Decorators、丰富的配置选项。</p>
 <p><img src="media/TypeScript.png" alt="TypeScript"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>React Native 学习资料</title>
+    <url>/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p>
+<h3 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h3><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p>
+<h3 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h3><p><code>⌥ + ⌘ + I</code></p>
+<h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p>
+<h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p>
+<p><code>React-Native/React/Redux</code></p>
+<p><code>Prettier</code></p>
+<p><code>Material Icon Theme</code></p>
+<h4 id="Redux-Snippets"><a href="#Redux-Snippets" class="headerlink" title="Redux Snippets"></a>Redux Snippets</h4><h5 id="rsf"><a href="#rsf" class="headerlink" title="rsf"></a>rsf</h5><p>引入模块 &amp; 创建函数</p>
+<h5 id="rnss"><a href="#rnss" class="headerlink" title="rnss"></a>rnss</h5><p>创建 StyleSheet</p>
+<h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p>
+<h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p>
+<h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p>
+<h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote>
+<ol>
+<li>运行时会检查拼写</li>
+<li>Facebook 做了优化</li>
+</ol>
+</blockquote>
 ]]></content>
   </entry>
 </search>
