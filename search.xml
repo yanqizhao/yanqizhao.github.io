@@ -192,4 +192,11 @@
 <h2 id="use-strict"><a href="#use-strict" class="headerlink" title="use strict"></a>use strict</h2><h2 id="import-requires"><a href="#import-requires" class="headerlink" title="import requires"></a>import requires</h2><h2 id="import-as-…-from-…"><a href="#import-as-…-from-…" class="headerlink" title="import * as … from …"></a>import * as … from …</h2><h2 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h2><p>默认导出，引用时无需使用 <code>&#123;&#125;</code></p>
 <h2 id="import-subtract-from-…"><a href="#import-subtract-from-…" class="headerlink" title="import subtract from …"></a>import subtract from …</h2>]]></content>
   </entry>
+  <entry>
+    <title>TypeScript</title>
+    <url>/2020/12/29/TypeScript/</url>
+    <content><![CDATA[<p>是 JavaScript 的超集，有类型系统、接口、泛型、Decorators、丰富的配置选项。</p>
+<p><img src="media/TypeScript.png" alt="TypeScript"></p>
+]]></content>
+  </entry>
 </search>
