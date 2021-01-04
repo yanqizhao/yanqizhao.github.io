@@ -1,137 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>OC Swift 混编问题</title>
-      <link href="2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/"/>
-      <url>2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>数据结构学习记录</title>
-      <link href="2020/12/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-      <url>2020/12/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.29 1-7<br />12.30 8-15</td><td><a href="https://www.bilibili.com/video/BV17y4y1U7Np">https://www.bilibili.com/video/BV17y4y1U7Np</a></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>TypeScript</title>
-      <link href="2020/12/29/TypeScript/"/>
-      <url>2020/12/29/TypeScript/</url>
-      
-        <content type="html"><![CDATA[<p>是 JavaScript 的超集，有类型系统、接口、泛型、Decorators、丰富的配置选项。</p><p><img src="media/TypeScript.png" alt="TypeScript"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>React Native 学习记录</title>
-      <link href="2020/12/28/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-      <url>2020/12/28/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<h1 id="React-Native-学习记录"><a href="#React-Native-学习记录" class="headerlink" title="React Native 学习记录"></a>React Native 学习记录</h1><table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.23 12.24</td><td>购物清单 <a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></td></tr><tr><td>12.25 12.28</td><td>各种组件 <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></td></tr><tr><td>12.29</td><td>TypeScript <a href="https://www.youtube.com/watch?v=BwuLxPH8IDs">https://www.youtube.com/watch?v=BwuLxPH8IDs</a></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>React Native Flexbox 布局</title>
-      <link href="2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/"/>
-      <url>2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/</url>
-      
-        <content type="html"><![CDATA[<p>[TOC]</p><h2 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h2><p>数值，子元素的主轴填充，一个区域根据每个元素 flex 值的和进行划分。</p><h2 id="flexDirection"><a href="#flexDirection" class="headerlink" title="flexDirection"></a>flexDirection</h2><p>主轴方向。</p><h4 id="column-默认"><a href="#column-默认" class="headerlink" title="column(默认)"></a>column(默认)</h4><p>竖直方向上对齐。</p><h4 id="column-reverse"><a href="#column-reverse" class="headerlink" title="column-reverse"></a>column-reverse</h4><p>竖直方向下对齐。</p><h4 id="row"><a href="#row" class="headerlink" title="row"></a>row</h4><p>水平方向左对齐。</p><h4 id="row-reverse"><a href="#row-reverse" class="headerlink" title="row-reverse"></a>row-reverse</h4><p>水平方向右对齐。</p><h2 id="justifyContent"><a href="#justifyContent" class="headerlink" title="justifyContent"></a>justifyContent</h2><p>子元素在主轴上的排列方式。</p><p>主轴没有 <code>stretch</code>、<code>baseline</code>属性。</p><h4 id="flex-start-默认"><a href="#flex-start-默认" class="headerlink" title="flex-start(默认)"></a>flex-start(默认)</h4><p>左对齐或上对齐。</p><h4 id="flex-end"><a href="#flex-end" class="headerlink" title="flex-end"></a>flex-end</h4><p>右对齐或下对齐。</p><h4 id="center"><a href="#center" class="headerlink" title="center"></a>center</h4><p>居中对齐。</p><h4 id="space-between"><a href="#space-between" class="headerlink" title="space-between"></a>space-between</h4><p>无边距的平均分布。</p><h4 id="space-around"><a href="#space-around" class="headerlink" title="space-around"></a>space-around</h4><p>有边距的平均分布。</p><h4 id="space-evenly"><a href="#space-evenly" class="headerlink" title="space-evenly"></a>space-evenly</h4><p>完全平均分布。</p><h2 id="alignItems"><a href="#alignItems" class="headerlink" title="alignItems"></a>alignItems</h2><p>子元素在次轴上的排列方式，只作用于当前行或当前列(可换行时)。</p><p>次轴没有<code>space-between</code>、<code>space-around</code>、<code>space-evenly</code>属性。</p><h4 id="streach-默认"><a href="#streach-默认" class="headerlink" title="streach(默认)"></a>streach(默认)</h4><p>主轴方向上完全拉伸，如果设置了宽度 or 高度则失效。</p><p><img src="media/stretch.png" alt="stretch"></p><h4 id="flex-start"><a href="#flex-start" class="headerlink" title="flex-start"></a>flex-start</h4><p>左对齐或上对齐。</p><p><img src="media/flex-start.png" alt="flex-start"></p><h4 id="flex-end-1"><a href="#flex-end-1" class="headerlink" title="flex-end"></a>flex-end</h4><p>右对齐或下对齐。</p><h4 id="center-1"><a href="#center-1" class="headerlink" title="center"></a>center</h4><p>居中对齐。</p><h4 id="baseline"><a href="#baseline" class="headerlink" title="baseline"></a>baseline</h4><p>左对齐或上对齐，基线为所有元素的最高点。</p><p><img src="media/baseline.png" alt="baseline"></p><h2 id="flexWrap"><a href="#flexWrap" class="headerlink" title="flexWrap"></a>flexWrap</h2><h4 id="nowrap"><a href="#nowrap" class="headerlink" title="nowrap"></a>nowrap</h4><p>不换行。</p><h4 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h4><p>换行。</p><p><img src="media/wrap.png" alt="wrap"></p><h4 id="wrap-reverse"><a href="#wrap-reverse" class="headerlink" title="wrap-reverse"></a>wrap-reverse</h4><p>逆序换行。</p><h2 id="alignContent"><a href="#alignContent" class="headerlink" title="alignContent"></a>alignContent</h2><p>子元素在次轴上的排列方式，全局而非当前行或当前列，只在可换行时有效。</p><h2 id="flexBasis"><a href="#flexBasis" class="headerlink" title="flexBasis"></a>flexBasis</h2><p>数值，主轴的默认宽度 or 高度，如果同时设置了宽度 or 高度，会覆盖宽度 or 高度。</p><h2 id="flexGrow"><a href="#flexGrow" class="headerlink" title="flexGrow"></a>flexGrow</h2><p>数值，填充剩余可用空间，<code>0</code>为默认值，相当于没有设置该属性，可为<code>&gt;=0</code>的浮点数，小于<code>1</code>的值代表占据宽度或高度的比例。</p><p><img src="media/flexGrow.png" alt="flexGrow"></p><h2 id="flexShrink"><a href="#flexShrink" class="headerlink" title="flexShrink"></a>flexShrink</h2><p>数值，没有设置换行时，部分元素会被挤出屏幕，设置该属性为<code>1</code>后可为当前元素分配剩余可用空间。</p><p><img src="media/flexShrink-1.png" alt="flexShrink-1"></p><p><img src="media/flexShrink-2.png" alt="flexShrink-2"></p><p><img src="media/flexShrink-3.png" alt="flexShrink-3"></p><h2 id="top-bottom-left-right-position"><a href="#top-bottom-left-right-position" class="headerlink" title="top bottom left right position"></a>top bottom left right position</h2><p>后布局的元素会覆盖先布局的元素。</p><h3 id="position"><a href="#position" class="headerlink" title="position"></a>position</h3><h4 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h4><p>相对位置，默认值。</p><h4 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h4><p>绝对位置，会影响其他子元素。</p><p><img src="media/top-1.png" alt="top-1"></p><p><img src="media/top-2.png" alt="top-2"></p><p><img src="media/bottom.png" alt="bottom"></p><p><img src="media/left.png" alt="left"></p><p><img src="media/right.png" alt="right"></p><p><img src="media/absolute.png" alt="absolute"></p><p><img src="media/relative.png" alt="relative"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>React Native 学习资料</title>
-      <link href="2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
-      <url>2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
-      
-        <content type="html"><![CDATA[<p>[TOC]</p><h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p><h3 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h3><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p><h3 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h3><p><code>⌥ + ⌘ + I</code></p><h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p><h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p><p><code>React-Native/React/Redux</code></p><p><code>Prettier</code></p><p><code>Material Icon Theme</code></p><h4 id="Redux-Snippets"><a href="#Redux-Snippets" class="headerlink" title="Redux Snippets"></a>Redux Snippets</h4><h5 id="rsf"><a href="#rsf" class="headerlink" title="rsf"></a>rsf</h5><p>引入模块 &amp; 创建函数</p><h5 id="rnss"><a href="#rnss" class="headerlink" title="rnss"></a>rnss</h5><p>创建 StyleSheet</p><h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p><h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p><h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p><h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote><ol><li>运行时会检查拼写</li><li>Facebook 做了优化</li></ol></blockquote>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JavaScript 学习记录</title>
-      <link href="2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-      <url>2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-      
-        <content type="html"><![CDATA[<table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.22 12.23</td><td>语法 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JavaScript 学习资料</title>
-      <link href="2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/"/>
-      <url>2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
-      
-        <content type="html"><![CDATA[<h2 id="3-小时入门教程-基础语法"><a href="#3-小时入门教程-基础语法" class="headerlink" title="3 小时入门教程(基础语法)"></a>3 小时入门教程(基础语法)</h2><p><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JavaScript 语法</title>
-      <link href="2020/12/22/JavaScript%20%E8%AF%AD%E6%B3%95/"/>
-      <url>2020/12/22/JavaScript%20%E8%AF%AD%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[<h2 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var let const"></a>var let const</h2><blockquote><p>let 不能声明多次</p></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">Uncaught ReferenceError: i is not defined </span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="Object-freeze"><a href="#Object-freeze" class="headerlink" title="Object.freeze()"></a>Object.freeze()</h3><h2 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h2><h2 id=""><a href="#" class="headerlink" title="==="></a>===</h2><h2 id="-1"><a href="#-1" class="headerlink" title="!=="></a>!==</h2><h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><h3 id="push-pop"><a href="#push-pop" class="headerlink" title="push pop"></a>push pop</h3><h3 id="shift-unshift"><a href="#shift-unshift" class="headerlink" title="shift unshift"></a>shift unshift</h3><h2 id="Math-random"><a href="#Math-random" class="headerlink" title="Math.random()"></a>Math.random()</h2><h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor()"></a>Math.floor()</h2><h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt()"></a>parseInt()</h2><p>字符串 -&gt; 数值</p><h2 id="Arrow-Function"><a href="#Arrow-Function" class="headerlink" title="Arrow Function"></a>Arrow Function</h2><p>匿名函数</p><h2 id="Rest-Operator"><a href="#Rest-Operator" class="headerlink" title="Rest Operator"></a>Rest Operator</h2><p>参数封装为数组</p><h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><p>深拷贝</p><h2 id="use-strict"><a href="#use-strict" class="headerlink" title="use strict"></a>use strict</h2><h2 id="import-requires"><a href="#import-requires" class="headerlink" title="import requires"></a>import requires</h2><h2 id="import-as-…-from-…"><a href="#import-as-…-from-…" class="headerlink" title="import * as … from …"></a>import * as … from …</h2><h2 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h2><p>默认导出，引用时无需使用 <code>&#123;&#125;</code></p><h2 id="import-subtract-from-…"><a href="#import-subtract-from-…" class="headerlink" title="import subtract from …"></a>import subtract from …</h2>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>iPhone 屏幕尺寸</title>
-      <link href="2020/11/23/iPhone%20%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8/"/>
-      <url>2020/11/23/iPhone%20%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="iPhone-屏幕尺寸"><a href="#iPhone-屏幕尺寸" class="headerlink" title="iPhone 屏幕尺寸"></a>iPhone 屏幕尺寸</h1><table><thead><tr><th>手机型号</th><th>屏幕尺寸</th><th>逻辑分辨率(pt)</th><th>物理分辨率(px)</th><th>倍图</th></tr></thead><tbody><tr><td>4/4s</td><td>3.5 inch</td><td>320*480pt</td><td>640*960px</td><td>@2x</td></tr><tr><td>5/5c/5s/SE</td><td>4.0 inch</td><td>320*568pt</td><td>640*1136px</td><td>@2x</td></tr><tr><td>6/6s/7/8/SE2</td><td>4.7 inch</td><td>375*667pt</td><td>750*1334px</td><td>@2x</td></tr><tr><td>6 Plus/6s Plus/7 Plus/8 Plus</td><td>5.5 inch</td><td>414*736pt</td><td>1242 * 2208px</td><td>@3x</td></tr><tr><td>X/XS/11 Pro</td><td>5.8 inch</td><td>375*812pt</td><td>1125* 2436px</td><td>@3x</td></tr><tr><td>XR/11</td><td>6.1 inch</td><td>414*896pt</td><td>828* 1792px</td><td>@2x</td></tr><tr><td>XS Max/11 Pro Max</td><td>6.5 inch</td><td>414*896pt</td><td>1242* 2688px</td><td>@3x</td></tr><tr><td>12 mini</td><td>5.4 inch</td><td>360*780pt</td><td>1080* 2340px</td><td>@3x</td></tr><tr><td>12/12 Pro</td><td>6.1 inch</td><td>390*844pt</td><td>1170* 2532px</td><td>@3x</td></tr><tr><td>12 Pro Max</td><td>6.7 inch</td><td>428*926pt</td><td>1284* 2778px</td><td>@3x</td></tr></tbody></table>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title>JavaScript 学习记录</title>
+    <url>/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Date</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12.22 12.23</td>
+<td>语法 <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>JavaScript 语法</title>
+    <url>/2020/12/22/JavaScript%20%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="var-let-const"><a href="#var-let-const" class="headerlink" title="var let const"></a>var let const</h2><blockquote>
+<p>let 不能声明多次</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;global&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> i = <span class="string">&quot;global&quot;</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">&quot;function&quot;</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">&quot;function&quot;</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">test();</span><br><span class="line"><span class="built_in">console</span>.log(i);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">console log:</span></span><br><span class="line"><span class="comment">Uncaught ReferenceError: i is not defined </span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="Object-freeze"><a href="#Object-freeze" class="headerlink" title="Object.freeze()"></a>Object.freeze()</h3><h2 id="undefined-null"><a href="#undefined-null" class="headerlink" title="undefined null"></a>undefined null</h2><h2 id=""><a href="#" class="headerlink" title="==="></a>===</h2><h2 id="-1"><a href="#-1" class="headerlink" title="!=="></a>!==</h2><h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><h3 id="push-pop"><a href="#push-pop" class="headerlink" title="push pop"></a>push pop</h3><h3 id="shift-unshift"><a href="#shift-unshift" class="headerlink" title="shift unshift"></a>shift unshift</h3><h2 id="Math-random"><a href="#Math-random" class="headerlink" title="Math.random()"></a>Math.random()</h2><h2 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor()"></a>Math.floor()</h2><h2 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt()"></a>parseInt()</h2><p>字符串 -&gt; 数值</p>
+<h2 id="Arrow-Function"><a href="#Arrow-Function" class="headerlink" title="Arrow Function"></a>Arrow Function</h2><p>匿名函数</p>
+<h2 id="Rest-Operator"><a href="#Rest-Operator" class="headerlink" title="Rest Operator"></a>Rest Operator</h2><p>参数封装为数组</p>
+<h2 id="Spread-Operator"><a href="#Spread-Operator" class="headerlink" title="Spread Operator"></a>Spread Operator</h2><p>深拷贝</p>
+<h2 id="use-strict"><a href="#use-strict" class="headerlink" title="use strict"></a>use strict</h2><h2 id="import-requires"><a href="#import-requires" class="headerlink" title="import requires"></a>import requires</h2><h2 id="import-as-…-from-…"><a href="#import-as-…-from-…" class="headerlink" title="import * as … from …"></a>import * as … from …</h2><h2 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h2><p>默认导出，引用时无需使用 <code>&#123;&#125;</code></p>
+<h2 id="import-subtract-from-…"><a href="#import-subtract-from-…" class="headerlink" title="import subtract from …"></a>import subtract from …</h2>]]></content>
+  </entry>
+  <entry>
+    <title>JavaScript 学习资料</title>
+    <url>/2020/12/23/JavaScript%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<h2 id="3-小时入门教程-基础语法"><a href="#3-小时入门教程-基础语法" class="headerlink" title="3 小时入门教程(基础语法)"></a>3 小时入门教程(基础语法)</h2><p><a href="https://www.youtube.com/watch?v=PkZNo7MFNFg">https://www.youtube.com/watch?v=PkZNo7MFNFg</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>React Native 学习记录</title>
+    <url>/2020/12/28/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="React-Native-学习记录"><a href="#React-Native-学习记录" class="headerlink" title="React Native 学习记录"></a>React Native 学习记录</h1><table>
+<thead>
+<tr>
+<th>Date</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12.23 12.24</td>
+<td>购物清单 <a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></td>
+</tr>
+<tr>
+<td>12.25 12.28</td>
+<td>各种组件 <a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></td>
+</tr>
+<tr>
+<td>12.29</td>
+<td>TypeScript <a href="https://www.youtube.com/watch?v=BwuLxPH8IDs">https://www.youtube.com/watch?v=BwuLxPH8IDs</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>React Native Flexbox 布局</title>
+    <url>/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h2><p>数值，子元素的主轴填充，一个区域根据每个元素 flex 值的和进行划分。</p>
+<h2 id="flexDirection"><a href="#flexDirection" class="headerlink" title="flexDirection"></a>flexDirection</h2><p>主轴方向。</p>
+<h4 id="column-默认"><a href="#column-默认" class="headerlink" title="column(默认)"></a>column(默认)</h4><p>竖直方向上对齐。</p>
+<h4 id="column-reverse"><a href="#column-reverse" class="headerlink" title="column-reverse"></a>column-reverse</h4><p>竖直方向下对齐。</p>
+<h4 id="row"><a href="#row" class="headerlink" title="row"></a>row</h4><p>水平方向左对齐。</p>
+<h4 id="row-reverse"><a href="#row-reverse" class="headerlink" title="row-reverse"></a>row-reverse</h4><p>水平方向右对齐。</p>
+<h2 id="justifyContent"><a href="#justifyContent" class="headerlink" title="justifyContent"></a>justifyContent</h2><p>子元素在主轴上的排列方式。</p>
+<p>主轴没有 <code>stretch</code>、<code>baseline</code>属性。</p>
+<h4 id="flex-start-默认"><a href="#flex-start-默认" class="headerlink" title="flex-start(默认)"></a>flex-start(默认)</h4><p>左对齐或上对齐。</p>
+<h4 id="flex-end"><a href="#flex-end" class="headerlink" title="flex-end"></a>flex-end</h4><p>右对齐或下对齐。</p>
+<h4 id="center"><a href="#center" class="headerlink" title="center"></a>center</h4><p>居中对齐。</p>
+<h4 id="space-between"><a href="#space-between" class="headerlink" title="space-between"></a>space-between</h4><p>无边距的平均分布。</p>
+<h4 id="space-around"><a href="#space-around" class="headerlink" title="space-around"></a>space-around</h4><p>有边距的平均分布。</p>
+<h4 id="space-evenly"><a href="#space-evenly" class="headerlink" title="space-evenly"></a>space-evenly</h4><p>完全平均分布。</p>
+<h2 id="alignItems"><a href="#alignItems" class="headerlink" title="alignItems"></a>alignItems</h2><p>子元素在次轴上的排列方式，只作用于当前行或当前列(可换行时)。</p>
+<p>次轴没有<code>space-between</code>、<code>space-around</code>、<code>space-evenly</code>属性。</p>
+<h4 id="streach-默认"><a href="#streach-默认" class="headerlink" title="streach(默认)"></a>streach(默认)</h4><p>主轴方向上完全拉伸，如果设置了宽度 or 高度则失效。</p>
+<p><img src="media/stretch.png" alt="stretch"></p>
+<h4 id="flex-start"><a href="#flex-start" class="headerlink" title="flex-start"></a>flex-start</h4><p>左对齐或上对齐。</p>
+<p><img src="media/flex-start.png" alt="flex-start"></p>
+<h4 id="flex-end-1"><a href="#flex-end-1" class="headerlink" title="flex-end"></a>flex-end</h4><p>右对齐或下对齐。</p>
+<h4 id="center-1"><a href="#center-1" class="headerlink" title="center"></a>center</h4><p>居中对齐。</p>
+<h4 id="baseline"><a href="#baseline" class="headerlink" title="baseline"></a>baseline</h4><p>左对齐或上对齐，基线为所有元素的最高点。</p>
+<p><img src="media/baseline.png" alt="baseline"></p>
+<h2 id="flexWrap"><a href="#flexWrap" class="headerlink" title="flexWrap"></a>flexWrap</h2><h4 id="nowrap"><a href="#nowrap" class="headerlink" title="nowrap"></a>nowrap</h4><p>不换行。</p>
+<h4 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h4><p>换行。</p>
+<p><img src="media/wrap.png" alt="wrap"></p>
+<h4 id="wrap-reverse"><a href="#wrap-reverse" class="headerlink" title="wrap-reverse"></a>wrap-reverse</h4><p>逆序换行。</p>
+<h2 id="alignContent"><a href="#alignContent" class="headerlink" title="alignContent"></a>alignContent</h2><p>子元素在次轴上的排列方式，全局而非当前行或当前列，只在可换行时有效。</p>
+<h2 id="flexBasis"><a href="#flexBasis" class="headerlink" title="flexBasis"></a>flexBasis</h2><p>数值，主轴的默认宽度 or 高度，如果同时设置了宽度 or 高度，会覆盖宽度 or 高度。</p>
+<h2 id="flexGrow"><a href="#flexGrow" class="headerlink" title="flexGrow"></a>flexGrow</h2><p>数值，填充剩余可用空间，<code>0</code>为默认值，相当于没有设置该属性，可为<code>&gt;=0</code>的浮点数，小于<code>1</code>的值代表占据宽度或高度的比例。</p>
+<p><img src="media/flexGrow.png" alt="flexGrow"></p>
+<h2 id="flexShrink"><a href="#flexShrink" class="headerlink" title="flexShrink"></a>flexShrink</h2><p>数值，没有设置换行时，部分元素会被挤出屏幕，设置该属性为<code>1</code>后可为当前元素分配剩余可用空间。</p>
+<p><img src="media/flexShrink-1.png" alt="flexShrink-1"></p>
+<p><img src="media/flexShrink-2.png" alt="flexShrink-2"></p>
+<p><img src="media/flexShrink-3.png" alt="flexShrink-3"></p>
+<h2 id="top-bottom-left-right-position"><a href="#top-bottom-left-right-position" class="headerlink" title="top bottom left right position"></a>top bottom left right position</h2><p>后布局的元素会覆盖先布局的元素。</p>
+<h3 id="position"><a href="#position" class="headerlink" title="position"></a>position</h3><h4 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h4><p>相对位置，默认值。</p>
+<h4 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h4><p>绝对位置，会影响其他子元素。</p>
+<p><img src="media/top-1.png" alt="top-1"></p>
+<p><img src="media/top-2.png" alt="top-2"></p>
+<p><img src="media/bottom.png" alt="bottom"></p>
+<p><img src="media/left.png" alt="left"></p>
+<p><img src="media/right.png" alt="right"></p>
+<p><img src="media/absolute.png" alt="absolute"></p>
+<p><img src="media/relative.png" alt="relative"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>TypeScript</title>
+    <url>/2020/12/29/TypeScript/</url>
+    <content><![CDATA[<p>是 JavaScript 的超集，有类型系统、接口、泛型、Decorators、丰富的配置选项。</p>
+<p><img src="media/TypeScript.png" alt="TypeScript"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>React Native 学习资料</title>
+    <url>/2020/12/23/React%20Native%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="1-小时入门教程-购物清单-常用组件"><a href="#1-小时入门教程-购物清单-常用组件" class="headerlink" title="1 小时入门教程(购物清单 常用组件)"></a>1 小时入门教程(购物清单 常用组件)</h2><p><a href="https://www.youtube.com/watch?v=Hf4MJH0jDb4">https://www.youtube.com/watch?v=Hf4MJH0jDb4</a></p>
+<h3 id="iOS-模拟器快捷键失效"><a href="#iOS-模拟器快捷键失效" class="headerlink" title="iOS 模拟器快捷键失效"></a>iOS 模拟器快捷键失效</h3><p><code>I/O -&gt; Input -&gt; Send Keyboard Input to Device</code></p>
+<h3 id="Web-调试快捷键"><a href="#Web-调试快捷键" class="headerlink" title="Web 调试快捷键"></a>Web 调试快捷键</h3><p><code>⌥ + ⌘ + I</code></p>
+<h2 id="2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试"><a href="#2-小时入门教程-VS-Code-插件、Web-调试、VS-Code-调试" class="headerlink" title="2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)"></a>2 小时入门教程(VS Code 插件、Web 调试、VS Code 调试)</h2><p><a href="https://www.youtube.com/watch?v=0-S5a0eXPoc">https://www.youtube.com/watch?v=0-S5a0eXPoc</a></p>
+<h3 id="VS-Code-插件"><a href="#VS-Code-插件" class="headerlink" title="VS Code 插件"></a>VS Code 插件</h3><p><code>React Native Tools</code></p>
+<p><code>React-Native/React/Redux</code></p>
+<p><code>Prettier</code></p>
+<p><code>Material Icon Theme</code></p>
+<h4 id="Redux-Snippets"><a href="#Redux-Snippets" class="headerlink" title="Redux Snippets"></a>Redux Snippets</h4><h5 id="rsf"><a href="#rsf" class="headerlink" title="rsf"></a>rsf</h5><p>引入模块 &amp; 创建函数</p>
+<h5 id="rnss"><a href="#rnss" class="headerlink" title="rnss"></a>rnss</h5><p>创建 StyleSheet</p>
+<h3 id="VS-Code-快捷键"><a href="#VS-Code-快捷键" class="headerlink" title="VS Code 快捷键"></a>VS Code 快捷键</h3><h4 id="⌘-D"><a href="#⌘-D" class="headerlink" title="⌘ + D"></a>⌘ + D</h4><p>选中文本，点击 <code>⌘ + D</code> 可多选相同的文本</p>
+<h4 id="⌥-↑-⌥-↓"><a href="#⌥-↑-⌥-↓" class="headerlink" title="⌥ + ↑ / ⌥ + ↓"></a>⌥ + ↑ / ⌥ + ↓</h4><p>选中文本，点击 <code>⌥ + ↑</code> 或 <code>⌥ + ↓</code> 移动位置</p>
+<h4 id="⇧-⌥-↑-⇧-⌥-↓"><a href="#⇧-⌥-↑-⇧-⌥-↓" class="headerlink" title="⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓"></a>⇧ + ⌥ + ↑ / ⇧ + ⌥ + ↓</h4><p>选中文本，点击 <code>⇧ + ⌥ + ↑</code>或<code>⇧ + ⌥ + ↓</code>拷贝一份相同内容</p>
+<h3 id="为什么要使用-StyleSheet"><a href="#为什么要使用-StyleSheet" class="headerlink" title="为什么要使用 StyleSheet"></a>为什么要使用 StyleSheet</h3><blockquote>
+<ol>
+<li>运行时会检查拼写</li>
+<li>Facebook 做了优化</li>
+</ol>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
+    <title>iPhone 屏幕尺寸</title>
+    <url>/2020/11/23/iPhone%20%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8/</url>
+    <content><![CDATA[<h1 id="iPhone-屏幕尺寸"><a href="#iPhone-屏幕尺寸" class="headerlink" title="iPhone 屏幕尺寸"></a>iPhone 屏幕尺寸</h1><table>
+<thead>
+<tr>
+<th>手机型号</th>
+<th>屏幕尺寸</th>
+<th>逻辑分辨率(pt)</th>
+<th>物理分辨率(px)</th>
+<th>倍图</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4/4s</td>
+<td>3.5 inch</td>
+<td>320*480pt</td>
+<td>640*960px</td>
+<td>@2x</td>
+</tr>
+<tr>
+<td>5/5c/5s/SE</td>
+<td>4.0 inch</td>
+<td>320*568pt</td>
+<td>640*1136px</td>
+<td>@2x</td>
+</tr>
+<tr>
+<td>6/6s/7/8/SE2</td>
+<td>4.7 inch</td>
+<td>375*667pt</td>
+<td>750*1334px</td>
+<td>@2x</td>
+</tr>
+<tr>
+<td>6 Plus/6s Plus/7 Plus/8 Plus</td>
+<td>5.5 inch</td>
+<td>414*736pt</td>
+<td>1242 * 2208px</td>
+<td>@3x</td>
+</tr>
+<tr>
+<td>X/XS/11 Pro</td>
+<td>5.8 inch</td>
+<td>375*812pt</td>
+<td>1125* 2436px</td>
+<td>@3x</td>
+</tr>
+<tr>
+<td>XR/11</td>
+<td>6.1 inch</td>
+<td>414*896pt</td>
+<td>828* 1792px</td>
+<td>@2x</td>
+</tr>
+<tr>
+<td>XS Max/11 Pro Max</td>
+<td>6.5 inch</td>
+<td>414*896pt</td>
+<td>1242* 2688px</td>
+<td>@3x</td>
+</tr>
+<tr>
+<td>12 mini</td>
+<td>5.4 inch</td>
+<td>360*780pt</td>
+<td>1080* 2340px</td>
+<td>@3x</td>
+</tr>
+<tr>
+<td>12/12 Pro</td>
+<td>6.1 inch</td>
+<td>390*844pt</td>
+<td>1170* 2532px</td>
+<td>@3x</td>
+</tr>
+<tr>
+<td>12 Pro Max</td>
+<td>6.7 inch</td>
+<td>428*926pt</td>
+<td>1284* 2778px</td>
+<td>@3x</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>数据结构学习记录</title>
+    <url>/2020/12/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th>Date</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12.29 1-7<br />12.30 8-15<br />1.1 15-47<br />1.2 48-49</td>
+<td><a href="https://www.bilibili.com/video/BV17y4y1U7Np">https://www.bilibili.com/video/BV17y4y1U7Np</a></td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>OC Swift 混编问题</title>
+    <url>/2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
