@@ -291,6 +291,9 @@
   <entry>
     <title>OC Swift 混编问题</title>
     <url>/2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>最近要使用一个支付的 SDK，纯 Swift 写的，用 CocoaPods 引入之后，怎么都找不到 <code>Adyen-Swift.h</code>文件，新建一个工程之后，在 <code>Podfile</code>中添加<code>use_frameworks!</code>就能找到。</p>
+<p>最后通过<code>@import Adyen</code>解决的。</p>
+<p>并不知道为什么！</p>
+]]></content>
   </entry>
 </search>

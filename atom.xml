@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-04T11:09:53.698Z</updated>
+  <updated>2021-01-04T11:40:12.568Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,15 @@
     <link href="http://example.com/2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2021/01/04/OC%20Swift%20%E6%B7%B7%E7%BC%96%E9%97%AE%E9%A2%98/</id>
     <published>2021-01-04T11:09:18.594Z</published>
-    <updated>2021-01-04T11:09:53.698Z</updated>
+    <updated>2021-01-04T11:40:12.568Z</updated>
     
+    <content type="html"><![CDATA[<p>最近要使用一个支付的 SDK，纯 Swift 写的，用 CocoaPods 引入之后，怎么都找不到 <code>Adyen-Swift.h</code>文件，新建一个工程之后，在 <code>Podfile</code>中添加<code>use_frameworks!</code>就能找到。</p><p>最后通过<code>@import Adyen</code>解决的。</p><p>并不知道为什么！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近要使用一个支付的 SDK，纯 Swift 写的，用 CocoaPods 引入之后，怎么都找不到 &lt;code&gt;Adyen-Swift.h&lt;/code&gt;文件，新建一个工程之后，在 &lt;code&gt;Podfile&lt;/code&gt;中添加&lt;code&gt;use_frameworks!&lt;/c</summary>
+      
     
     
     
