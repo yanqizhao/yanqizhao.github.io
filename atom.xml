@@ -41,9 +41,9 @@
     <link href="http://example.com/2020/12/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     <id>http://example.com/2020/12/31/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
     <published>2020-12-31T03:04:43.000Z</published>
-    <updated>2021-01-04T11:19:10.116Z</updated>
+    <updated>2021-01-05T09:47:37.260Z</updated>
     
-    <content type="html"><![CDATA[<table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.29 1-7<br />12.30 8-15<br />1.1 15-47<br />1.2 48-49</td><td><a href="https://www.bilibili.com/video/BV17y4y1U7Np">https://www.bilibili.com/video/BV17y4y1U7Np</a></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<table><thead><tr><th>Date</th><th></th></tr></thead><tbody><tr><td>12.29 1-7<br />12.30 8-15<br />1.1 15-47<br />1.2 48-49<br />1.4 49-50</td><td><a href="https://www.bilibili.com/video/BV17y4y1U7Np">https://www.bilibili.com/video/BV17y4y1U7Np</a></td></tr></tbody></table>]]></content>
     
     
       
@@ -56,8 +56,7 @@
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;12.29 1-7&lt;br /&gt;12.30 8-15&lt;br /&gt;1.1 15-47&lt;br /&gt;1.2 48-49&lt;/td&gt;
-&lt;td</summary>
+&lt;td&gt;12.29 1-7&lt;br /&gt;12.30 8-15&lt;br /&gt;1.1 15-47&lt;br /&gt;1.2 48-49&lt;br /&gt;1.4</summary>
       
     
     
@@ -226,7 +225,7 @@
     <link href="http://example.com/2020/11/23/iPhone%20%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8/"/>
     <id>http://example.com/2020/11/23/iPhone%20%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8/</id>
     <published>2020-11-23T03:20:58.760Z</published>
-    <updated>2020-12-30T07:38:48.315Z</updated>
+    <updated>2021-01-05T09:47:06.334Z</updated>
     
     <content type="html"><![CDATA[<h1 id="iPhone-屏幕尺寸"><a href="#iPhone-屏幕尺寸" class="headerlink" title="iPhone 屏幕尺寸"></a>iPhone 屏幕尺寸</h1><table><thead><tr><th>手机型号</th><th>屏幕尺寸</th><th>逻辑分辨率(pt)</th><th>物理分辨率(px)</th><th>倍图</th></tr></thead><tbody><tr><td>4/4s</td><td>3.5 inch</td><td>320*480pt</td><td>640*960px</td><td>@2x</td></tr><tr><td>5/5c/5s/SE</td><td>4.0 inch</td><td>320*568pt</td><td>640*1136px</td><td>@2x</td></tr><tr><td>6/6s/7/8/SE2</td><td>4.7 inch</td><td>375*667pt</td><td>750*1334px</td><td>@2x</td></tr><tr><td>6 Plus/6s Plus/7 Plus/8 Plus</td><td>5.5 inch</td><td>414*736pt</td><td>1242 * 2208px</td><td>@3x</td></tr><tr><td>X/XS/11 Pro</td><td>5.8 inch</td><td>375*812pt</td><td>1125* 2436px</td><td>@3x</td></tr><tr><td>XR/11</td><td>6.1 inch</td><td>414*896pt</td><td>828* 1792px</td><td>@2x</td></tr><tr><td>XS Max/11 Pro Max</td><td>6.5 inch</td><td>414*896pt</td><td>1242* 2688px</td><td>@3x</td></tr><tr><td>12 mini</td><td>5.4 inch</td><td>360*780pt</td><td>1080* 2340px</td><td>@3x</td></tr><tr><td>12/12 Pro</td><td>6.1 inch</td><td>390*844pt</td><td>1170* 2532px</td><td>@3x</td></tr><tr><td>12 Pro Max</td><td>6.7 inch</td><td>428*926pt</td><td>1284* 2778px</td><td>@3x</td></tr></tbody></table>]]></content>
     
