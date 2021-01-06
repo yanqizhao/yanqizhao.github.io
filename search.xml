@@ -362,9 +362,42 @@
       </tags>
   </entry>
   <entry>
-    <title>Adyen</title>
+    <title>Adyen SDK 接入</title>
     <url>/2021/01/06/Adyen/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><a href="https://docs.adyen.com/checkout/get-started">https://docs.adyen.com/checkout/get-started</a></p>
+<h2 id="API-Key"><a href="#API-Key" class="headerlink" title="API Key"></a>API Key</h2><p>生成后 24 小时失效，保存后无法再显示。</p>
+<h2 id="Client-Key"><a href="#Client-Key" class="headerlink" title="Client Key"></a>Client Key</h2><p>默认生成的，无需手动添加。</p>
+]]></content>
+      <categories>
+        <category>iOS 开发笔记</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>SDK</tag>
+        <tag>支付</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Adyen SDK 接入（一）账号注册 &amp; 准备工作</title>
+    <url>/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&amp;%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h2 id="接入步骤"><a href="#接入步骤" class="headerlink" title="接入步骤"></a>接入步骤</h2><h3 id="1-注册账号"><a href="#1-注册账号" class="headerlink" title="1. 注册账号"></a>1. 注册账号</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account">https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account</a></p>
+<h3 id="2-生成-API-Key"><a href="#2-生成-API-Key" class="headerlink" title="2. 生成 API Key"></a>2. 生成 API Key</h3><p><a href="https://docs.adyen.com/checkout/get-started#api-key">https://docs.adyen.com/checkout/get-started#api-key</a></p>
+<p>生成后 24 小时失效，保存后无法再显示。</p>
+<h4 id="1-选择-API-credentials"><a href="#1-选择-API-credentials" class="headerlink" title="1- 选择 API credentials"></a>1- 选择 API credentials</h4><p><img src="media/Adyen-API%20credentials.png" alt="Adyen-API credentials"></p>
+<h4 id="2-选择-ws-Company-YourCompany"><a href="#2-选择-ws-Company-YourCompany" class="headerlink" title="2- 选择 ws@Company.{YourCompany}"></a>2- 选择 ws@Company.{YourCompany}</h4><p><img src="media/Adyen-API%20credentials2.png" alt="Adyen-API credentials2"></p>
+<h4 id="3-点击-Generate-New-API-Key"><a href="#3-点击-Generate-New-API-Key" class="headerlink" title="3- 点击 Generate New API Key"></a>3- 点击 Generate New API Key</h4><p><img src="media/Adyen-API%20credentials3.png" alt="Adyen-API credentials3"></p>
+<h4 id="4-复制-API-Key-并保存起来"><a href="#4-复制-API-Key-并保存起来" class="headerlink" title="4- 复制 API Key 并保存起来"></a>4- 复制 API Key 并保存起来</h4><h4 id="5-点击-Save-Generated-API-Key"><a href="#5-点击-Save-Generated-API-Key" class="headerlink" title="5- 点击 Save Generated API Key"></a>5- 点击 Save Generated API Key</h4><h4 id="6-弹窗确认"><a href="#6-弹窗确认" class="headerlink" title="6- 弹窗确认"></a>6- 弹窗确认</h4><p><img src="media/Adyen-API%20credentials4.JPG" alt="Adyen-API credentials4"></p>
+<h3 id="3-测试一笔支付"><a href="#3-测试一笔支付" class="headerlink" title="3. 测试一笔支付"></a>3. 测试一笔支付</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment">https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment</a></p>
+<h4 id="终端测试"><a href="#终端测试" class="headerlink" title="终端测试"></a>终端测试</h4><p>将下列代码中的 <code>YOUR_API_KEY</code> 和 <code>YourCompanyECOM</code> 替换掉并拷贝到终端运行。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;checkout-test.adyen.com&#x2F;v66&#x2F;payments \</span><br><span class="line">-H &#39;x-api-key: YOUR_API_KEY&#39; \</span><br><span class="line">-H &#39;content-type: application&#x2F;json&#39; \</span><br><span class="line">-d &#39;&#123;</span><br><span class="line">  &quot;merchantAccount&quot;: &quot;YourCompanyECOM&quot;,</span><br><span class="line">  &quot;reference&quot;: &quot;My first Adyen test payment&quot;,</span><br><span class="line">  &quot;amount&quot;: &#123;</span><br><span class="line">    &quot;value&quot;: 1000,</span><br><span class="line">    &quot;currency&quot;: &quot;EUR&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">    &quot;paymentMethod&quot;: &#123;</span><br><span class="line">    &quot;type&quot;: &quot;scheme&quot;,</span><br><span class="line">    &quot;encryptedCardNumber&quot;: &quot;test_4111111111111111&quot;,</span><br><span class="line">    &quot;encryptedExpiryMonth&quot;: &quot;test_03&quot;,</span><br><span class="line">    &quot;encryptedExpiryYear&quot;: &quot;test_2030&quot;,</span><br><span class="line">    &quot;encryptedSecurityCode&quot;: &quot;test_737&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;&#39;</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="1-YOUR-API-KEY-获取"><a href="#1-YOUR-API-KEY-获取" class="headerlink" title="1- YOUR_API_KEY 获取"></a>1- <code>YOUR_API_KEY</code> 获取</h5><p><code>YOUR_API_KEY</code> 在第二步已经获取到了。</p>
+<h5 id="2-YourCompanyECOM-获取"><a href="#2-YourCompanyECOM-获取" class="headerlink" title="2- YourCompanyECOM 获取"></a>2- <code>YourCompanyECOM</code> 获取</h5><h6 id="1-选择-Merchant-accounts"><a href="#1-选择-Merchant-accounts" class="headerlink" title="1- 选择 Merchant accounts"></a>1- 选择 Merchant accounts</h6><p><img src="media/Adyen-Merchant%20accounts.png" alt="Adyen-Merchant accounts"></p>
+<h6 id="2-Account-code-下的内容即-YourCompanyECOM"><a href="#2-Account-code-下的内容即-YourCompanyECOM" class="headerlink" title="2- Account code 下的内容即 YourCompanyECOM"></a>2- Account code 下的内容即 <code>YourCompanyECOM</code></h6><p><img src="media/Adyen-Merchant%20accounts2.png" alt="Adyen-Merchant accounts2"></p>
+<h4 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="media/Adyen-Test.JPG" alt="Adyen-Test"></h4><p>支付结果在后台也能看到。</p>
+]]></content>
       <categories>
         <category>iOS 开发笔记</category>
       </categories>
