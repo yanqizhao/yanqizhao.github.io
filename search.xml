@@ -19,6 +19,9 @@
       <categories>
         <category>JavaScript</category>
       </categories>
+      <tags>
+        <tag>学习记录</tag>
+      </tags>
   </entry>
   <entry>
     <title>JavaScript 语法</title>
@@ -51,6 +54,9 @@
       <categories>
         <category>JavaScript</category>
       </categories>
+      <tags>
+        <tag>编程语言</tag>
+      </tags>
   </entry>
   <entry>
     <title>JavaScript 学习资料</title>
@@ -60,6 +66,9 @@
       <categories>
         <category>JavaScript</category>
       </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
   </entry>
   <entry>
     <title>React Native 学习记录</title>
@@ -112,6 +121,9 @@
       <categories>
         <category>React Native</category>
       </categories>
+      <tags>
+        <tag>学习记录</tag>
+      </tags>
   </entry>
   <entry>
     <title>React Native Flexbox 布局</title>
@@ -167,6 +179,9 @@
       <categories>
         <category>React Native</category>
       </categories>
+      <tags>
+        <tag>编程语言</tag>
+      </tags>
   </entry>
   <entry>
     <title>TypeScript</title>
@@ -177,6 +192,9 @@
       <categories>
         <category>TypeScript</category>
       </categories>
+      <tags>
+        <tag>编程语言</tag>
+      </tags>
   </entry>
   <entry>
     <title>React Native 学习资料</title>
@@ -205,6 +223,9 @@
       <categories>
         <category>React Native</category>
       </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
   </entry>
   <entry>
     <title>iPhone 屏幕尺寸</title>
@@ -294,6 +315,9 @@
       <categories>
         <category>iOS 开发笔记</category>
       </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
   </entry>
   <entry>
     <title>数据结构学习记录</title>
@@ -314,6 +338,9 @@
       <categories>
         <category>数据结构</category>
       </categories>
+      <tags>
+        <tag>学习记录</tag>
+      </tags>
   </entry>
   <entry>
     <title>OC Swift 混编问题</title>
@@ -325,5 +352,8 @@
       <categories>
         <category>iOS 开发笔记</category>
       </categories>
+      <tags>
+        <tag>iOS</tag>
+      </tags>
   </entry>
 </search>
