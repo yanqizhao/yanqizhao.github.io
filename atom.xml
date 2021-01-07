@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-06T08:10:29.291Z</updated>
+  <updated>2021-01-07T03:08:54.671Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,19 +17,68 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Swift 语法</title>
+    <link href="http://example.com/2021/01/07/Swift%20%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2021/01/07/Swift%20%E8%AF%AD%E6%B3%95/</id>
+    <published>2021-01-07T03:07:28.000Z</published>
+    <updated>2021-01-07T03:08:54.671Z</updated>
+    
+    
+    
+    
+    <category term="Swift" scheme="http://example.com/categories/Swift/"/>
+    
+    
+    <category term="编程语言" scheme="http://example.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    <category term="语法基础" scheme="http://example.com/tags/%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Adyen SDK 接入（二）</title>
+    <link href="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+    <id>http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+    <published>2021-01-06T08:14:11.000Z</published>
+    <updated>2021-01-07T03:31:47.222Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一份集成清单列表，里面罗列了集成所需的步骤。</p><p><a href="https://docs.adyen.com/checkout/integration-checklist">https://docs.adyen.com/checkout/integration-checklist</a></p><p>客户端一直无法显示 Sofort 这一项，开始我以为是 demo 没有实现，后来发现是国家选择的问题，国家默认选择了荷兰，恰巧 Sofort 不支持荷兰。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是一份集成清单列表，里面罗列了集成所需的步骤。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.adyen.com/checkout/integration-checklist&quot;&gt;https://docs.adyen.com/checkout/integrati</summary>
+      
+    
+    
+    
+    <category term="iOS 开发笔记" scheme="http://example.com/categories/iOS-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="iOS" scheme="http://example.com/tags/iOS/"/>
+    
+    <category term="SDK" scheme="http://example.com/tags/SDK/"/>
+    
+    <category term="支付" scheme="http://example.com/tags/%E6%94%AF%E4%BB%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Adyen SDK 接入（一）账号注册 &amp; 准备工作</title>
     <link href="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&amp;%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/"/>
     <id>http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&amp;%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/</id>
     <published>2021-01-06T03:41:32.000Z</published>
-    <updated>2021-01-06T08:10:29.291Z</updated>
+    <updated>2021-01-07T03:42:38.341Z</updated>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="接入步骤"><a href="#接入步骤" class="headerlink" title="接入步骤"></a>接入步骤</h2><h3 id="1-注册账号"><a href="#1-注册账号" class="headerlink" title="1. 注册账号"></a>1. 注册账号</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account">https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account</a></p><h3 id="2-生成-API-Key"><a href="#2-生成-API-Key" class="headerlink" title="2. 生成 API Key"></a>2. 生成 API Key</h3><p><a href="https://docs.adyen.com/checkout/get-started#api-key">https://docs.adyen.com/checkout/get-started#api-key</a></p><p>生成后 24 小时失效，保存后无法再显示。</p><h4 id="1-选择-API-credentials"><a href="#1-选择-API-credentials" class="headerlink" title="1- 选择 API credentials"></a>1- 选择 API credentials</h4><p><img src="media/Adyen-API%20credentials.png" alt="Adyen-API credentials"></p><h4 id="2-选择-ws-Company-YourCompany"><a href="#2-选择-ws-Company-YourCompany" class="headerlink" title="2- 选择 ws@Company.{YourCompany}"></a>2- 选择 ws@Company.{YourCompany}</h4><p><img src="media/Adyen-API%20credentials2.png" alt="Adyen-API credentials2"></p><h4 id="3-点击-Generate-New-API-Key"><a href="#3-点击-Generate-New-API-Key" class="headerlink" title="3- 点击 Generate New API Key"></a>3- 点击 Generate New API Key</h4><p><img src="media/Adyen-API%20credentials3.png" alt="Adyen-API credentials3"></p><h4 id="4-复制-API-Key-并保存起来"><a href="#4-复制-API-Key-并保存起来" class="headerlink" title="4- 复制 API Key 并保存起来"></a>4- 复制 API Key 并保存起来</h4><h4 id="5-点击-Save-Generated-API-Key"><a href="#5-点击-Save-Generated-API-Key" class="headerlink" title="5- 点击 Save Generated API Key"></a>5- 点击 Save Generated API Key</h4><h4 id="6-弹窗确认"><a href="#6-弹窗确认" class="headerlink" title="6- 弹窗确认"></a>6- 弹窗确认</h4><p><img src="media/Adyen-API%20credentials4.JPG" alt="Adyen-API credentials4"></p><h3 id="3-测试一笔支付"><a href="#3-测试一笔支付" class="headerlink" title="3. 测试一笔支付"></a>3. 测试一笔支付</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment">https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment</a></p><h4 id="终端测试"><a href="#终端测试" class="headerlink" title="终端测试"></a>终端测试</h4><p>将下列代码中的 <code>YOUR_API_KEY</code> 和 <code>YourCompanyECOM</code> 替换掉并拷贝到终端运行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;checkout-test.adyen.com&#x2F;v66&#x2F;payments \</span><br><span class="line">-H &#39;x-api-key: YOUR_API_KEY&#39; \</span><br><span class="line">-H &#39;content-type: application&#x2F;json&#39; \</span><br><span class="line">-d &#39;&#123;</span><br><span class="line">  &quot;merchantAccount&quot;: &quot;YourCompanyECOM&quot;,</span><br><span class="line">  &quot;reference&quot;: &quot;My first Adyen test payment&quot;,</span><br><span class="line">  &quot;amount&quot;: &#123;</span><br><span class="line">    &quot;value&quot;: 1000,</span><br><span class="line">    &quot;currency&quot;: &quot;EUR&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">    &quot;paymentMethod&quot;: &#123;</span><br><span class="line">    &quot;type&quot;: &quot;scheme&quot;,</span><br><span class="line">    &quot;encryptedCardNumber&quot;: &quot;test_4111111111111111&quot;,</span><br><span class="line">    &quot;encryptedExpiryMonth&quot;: &quot;test_03&quot;,</span><br><span class="line">    &quot;encryptedExpiryYear&quot;: &quot;test_2030&quot;,</span><br><span class="line">    &quot;encryptedSecurityCode&quot;: &quot;test_737&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;&#39;</span><br></pre></td></tr></table></figure><h5 id="1-YOUR-API-KEY-获取"><a href="#1-YOUR-API-KEY-获取" class="headerlink" title="1- YOUR_API_KEY 获取"></a>1- <code>YOUR_API_KEY</code> 获取</h5><p><code>YOUR_API_KEY</code> 在第二步已经获取到了。</p><h5 id="2-YourCompanyECOM-获取"><a href="#2-YourCompanyECOM-获取" class="headerlink" title="2- YourCompanyECOM 获取"></a>2- <code>YourCompanyECOM</code> 获取</h5><h6 id="1-选择-Merchant-accounts"><a href="#1-选择-Merchant-accounts" class="headerlink" title="1- 选择 Merchant accounts"></a>1- 选择 Merchant accounts</h6><p><img src="media/Adyen-Merchant%20accounts.png" alt="Adyen-Merchant accounts"></p><h6 id="2-Account-code-下的内容即-YourCompanyECOM"><a href="#2-Account-code-下的内容即-YourCompanyECOM" class="headerlink" title="2- Account code 下的内容即 YourCompanyECOM"></a>2- Account code 下的内容即 <code>YourCompanyECOM</code></h6><p><img src="media/Adyen-Merchant%20accounts2.png" alt="Adyen-Merchant accounts2"></p><h4 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="media/Adyen-Test.JPG" alt="Adyen-Test"></h4><p>支付结果在后台也能看到。</p>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><p>Adyen SDK 与其他常见的 SDK 不太一样，API Key 与 Client Key 都是需要自己手动生成的，live 与 test 的环境区分也较为严格，想要申请 live 账号必须通过公司，这就导致个人测试时相对比较麻烦。</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="1-注册账号"><a href="#1-注册账号" class="headerlink" title="1. 注册账号"></a>1. 注册账号</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account">https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account</a></p><h3 id="2-生成-API-Key"><a href="#2-生成-API-Key" class="headerlink" title="2. 生成 API Key"></a>2. 生成 API Key</h3><p><a href="https://docs.adyen.com/checkout/get-started#api-key">https://docs.adyen.com/checkout/get-started#api-key</a></p><p>生成后 24 小时失效，保存后无法再显示。</p><h4 id="1-选择-API-credentials"><a href="#1-选择-API-credentials" class="headerlink" title="1- 选择 API credentials"></a>1- 选择 API credentials</h4><p><img src="media/Adyen-API%20credentials.png" alt="Adyen-API credentials"></p><h4 id="2-选择-ws-Company-YourCompany"><a href="#2-选择-ws-Company-YourCompany" class="headerlink" title="2- 选择 ws@Company.{YourCompany}"></a>2- 选择 ws@Company.{YourCompany}</h4><p><img src="media/Adyen-API%20credentials2.png" alt="Adyen-API credentials2"></p><h4 id="3-点击-Generate-New-API-Key"><a href="#3-点击-Generate-New-API-Key" class="headerlink" title="3- 点击 Generate New API Key"></a>3- 点击 Generate New API Key</h4><p><img src="media/Adyen-API%20credentials3.png" alt="Adyen-API credentials3"></p><h4 id="4-复制-API-Key-并保存起来"><a href="#4-复制-API-Key-并保存起来" class="headerlink" title="4- 复制 API Key 并保存起来"></a>4- 复制 API Key 并保存起来</h4><h4 id="5-点击-Save-Generated-API-Key"><a href="#5-点击-Save-Generated-API-Key" class="headerlink" title="5- 点击 Save Generated API Key"></a>5- 点击 Save Generated API Key</h4><h4 id="6-弹窗确认"><a href="#6-弹窗确认" class="headerlink" title="6- 弹窗确认"></a>6- 弹窗确认</h4><p><img src="media/Adyen-API%20credentials4.JPG" alt="Adyen-API credentials4"></p><h3 id="3-测试一笔支付"><a href="#3-测试一笔支付" class="headerlink" title="3. 测试一笔支付"></a>3. 测试一笔支付</h3><p><a href="https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment">https://docs.adyen.com/checkout/get-started#step-3-make-a-test-payment</a></p><h4 id="终端测试"><a href="#终端测试" class="headerlink" title="终端测试"></a>终端测试</h4><p>将下列代码中的 <code>YOUR_API_KEY</code> 和 <code>YourCompanyECOM</code> 替换掉并拷贝到终端运行。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">curl https:&#x2F;&#x2F;checkout-test.adyen.com&#x2F;v66&#x2F;payments \</span><br><span class="line">-H &#39;x-api-key: YOUR_API_KEY&#39; \</span><br><span class="line">-H &#39;content-type: application&#x2F;json&#39; \</span><br><span class="line">-d &#39;&#123;</span><br><span class="line">  &quot;merchantAccount&quot;: &quot;YourCompanyECOM&quot;,</span><br><span class="line">  &quot;reference&quot;: &quot;My first Adyen test payment&quot;,</span><br><span class="line">  &quot;amount&quot;: &#123;</span><br><span class="line">    &quot;value&quot;: 1000,</span><br><span class="line">    &quot;currency&quot;: &quot;EUR&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">    &quot;paymentMethod&quot;: &#123;</span><br><span class="line">    &quot;type&quot;: &quot;scheme&quot;,</span><br><span class="line">    &quot;encryptedCardNumber&quot;: &quot;test_4111111111111111&quot;,</span><br><span class="line">    &quot;encryptedExpiryMonth&quot;: &quot;test_03&quot;,</span><br><span class="line">    &quot;encryptedExpiryYear&quot;: &quot;test_2030&quot;,</span><br><span class="line">    &quot;encryptedSecurityCode&quot;: &quot;test_737&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;&#39;</span><br></pre></td></tr></table></figure><h5 id="1-YOUR-API-KEY-获取"><a href="#1-YOUR-API-KEY-获取" class="headerlink" title="1- YOUR_API_KEY 获取"></a>1- <code>YOUR_API_KEY</code> 获取</h5><p><code>YOUR_API_KEY</code> 在第二步已经获取到了。</p><h5 id="2-YourCompanyECOM-获取"><a href="#2-YourCompanyECOM-获取" class="headerlink" title="2- YourCompanyECOM 获取"></a>2- <code>YourCompanyECOM</code> 获取</h5><h6 id="1-选择-Merchant-accounts"><a href="#1-选择-Merchant-accounts" class="headerlink" title="1- 选择 Merchant accounts"></a>1- 选择 Merchant accounts</h6><p><img src="media/Adyen-Merchant%20accounts.png" alt="Adyen-Merchant accounts"></p><h6 id="2-Account-code-下的内容即-YourCompanyECOM"><a href="#2-Account-code-下的内容即-YourCompanyECOM" class="headerlink" title="2- Account code 下的内容即 YourCompanyECOM"></a>2- Account code 下的内容即 <code>YourCompanyECOM</code></h6><p><img src="media/Adyen-Merchant%20accounts2.png" alt="Adyen-Merchant accounts2"></p><h4 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h4><h4 id=""><a href="#" class="headerlink" title=""></a><img src="media/Adyen-Test.JPG" alt="Adyen-Test"></h4><p>支付结果在后台也能看到。</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;接入步骤&quot;&gt;&lt;a href=&quot;#接入步骤&quot; class=&quot;headerlink&quot; title=&quot;接入步骤&quot;&gt;&lt;/a&gt;接入步骤&lt;/h2&gt;&lt;h3 id=&quot;1-注册账号&quot;&gt;&lt;a href=&quot;#1-注册账号&quot; class=&quot;headerlink&quot;</summary>
+&lt;p&gt;Adyen SDK 与其他常见的 SDK 不太一样，API Key 与 Client Key 都是需要自己手动生成的，live 与 test 的环境区分也较为严格，想要申请 live 账号必须通过公司，这就导致个人测试时相对比较麻烦。&lt;/p&gt;
+&lt;h</summary>
       
     
     
