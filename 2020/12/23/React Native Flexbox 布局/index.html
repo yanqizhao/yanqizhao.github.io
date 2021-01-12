@@ -27,28 +27,28 @@
 <meta property="og:site_name" content="小蘑菇的技术之路">
 <meta property="og:description" content="[TOC] flex数值，子元素的主轴填充，一个区域根据每个元素 flex 值的和进行划分。 flexDirection主轴方向。 column(默认)竖直方向上对齐。 column-reverse竖直方向下对齐。 row水平方向左对齐。 row-reverse水平方向右对齐。 justifyContent子元素在主轴上的排列方式。 主轴没有 stretch、baseline属性。 flex-st">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/stretch.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/flex-start.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/baseline.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/wrap.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/flexGrow.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/flexShrink-1.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/flexShrink-2.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/flexShrink-3.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/top-1.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/top-2.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/bottom.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/left.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/right.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/absolute.png">
-<meta property="og:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/relative.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144509.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144536.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144557.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144616.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144636.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144657.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144805.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144834.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144858.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144909.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144923.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144935.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145018.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145041.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145118.png">
 <meta property="article:published_time" content="2020-12-23T09:35:52.581Z">
-<meta property="article:modified_time" content="2021-01-06T03:31:37.499Z">
+<meta property="article:modified_time" content="2021-01-12T06:51:23.644Z">
 <meta property="article:author" content="小蘑菇">
 <meta property="article:tag" content="编程语言">
 <meta property="article:tag" content="UI">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/media/stretch.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144509.png">
 
 <link rel="canonical" href="http://example.com/2020/12/23/React%20Native%20Flexbox%20%E5%B8%83%E5%B1%80/">
 
@@ -214,7 +214,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-06 11:31:37" itemprop="dateModified" datetime="2021-01-06T11:31:37+08:00">2021-01-06</time>
+                <time title="修改时间：2021-01-12 14:51:23" itemprop="dateModified" datetime="2021-01-12T14:51:23+08:00">2021-01-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -255,35 +255,35 @@
 <h2 id="alignItems"><a href="#alignItems" class="headerlink" title="alignItems"></a>alignItems</h2><p>子元素在次轴上的排列方式，只作用于当前行或当前列(可换行时)。</p>
 <p>次轴没有<code>space-between</code>、<code>space-around</code>、<code>space-evenly</code>属性。</p>
 <h4 id="streach-默认"><a href="#streach-默认" class="headerlink" title="streach(默认)"></a>streach(默认)</h4><p>主轴方向上完全拉伸，如果设置了宽度 or 高度则失效。</p>
-<p><img src="media/stretch.png" alt="stretch"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144509.png" alt="stretch"></p>
 <h4 id="flex-start"><a href="#flex-start" class="headerlink" title="flex-start"></a>flex-start</h4><p>左对齐或上对齐。</p>
-<p><img src="media/flex-start.png" alt="flex-start"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144536.png" alt="flex-start"></p>
 <h4 id="flex-end-1"><a href="#flex-end-1" class="headerlink" title="flex-end"></a>flex-end</h4><p>右对齐或下对齐。</p>
 <h4 id="center-1"><a href="#center-1" class="headerlink" title="center"></a>center</h4><p>居中对齐。</p>
 <h4 id="baseline"><a href="#baseline" class="headerlink" title="baseline"></a>baseline</h4><p>左对齐或上对齐，基线为所有元素的最高点。</p>
-<p><img src="media/baseline.png" alt="baseline"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144557.png" alt="baseline"></p>
 <h2 id="flexWrap"><a href="#flexWrap" class="headerlink" title="flexWrap"></a>flexWrap</h2><h4 id="nowrap"><a href="#nowrap" class="headerlink" title="nowrap"></a>nowrap</h4><p>不换行。</p>
 <h4 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h4><p>换行。</p>
-<p><img src="media/wrap.png" alt="wrap"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144616.png" alt="wrap"></p>
 <h4 id="wrap-reverse"><a href="#wrap-reverse" class="headerlink" title="wrap-reverse"></a>wrap-reverse</h4><p>逆序换行。</p>
 <h2 id="alignContent"><a href="#alignContent" class="headerlink" title="alignContent"></a>alignContent</h2><p>子元素在次轴上的排列方式，全局而非当前行或当前列，只在可换行时有效。</p>
 <h2 id="flexBasis"><a href="#flexBasis" class="headerlink" title="flexBasis"></a>flexBasis</h2><p>数值，主轴的默认宽度 or 高度，如果同时设置了宽度 or 高度，会覆盖宽度 or 高度。</p>
 <h2 id="flexGrow"><a href="#flexGrow" class="headerlink" title="flexGrow"></a>flexGrow</h2><p>数值，填充剩余可用空间，<code>0</code>为默认值，相当于没有设置该属性，可为<code>&gt;=0</code>的浮点数，小于<code>1</code>的值代表占据宽度或高度的比例。</p>
-<p><img src="media/flexGrow.png" alt="flexGrow"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144636.png" alt="flexGrow"></p>
 <h2 id="flexShrink"><a href="#flexShrink" class="headerlink" title="flexShrink"></a>flexShrink</h2><p>数值，没有设置换行时，部分元素会被挤出屏幕，设置该属性为<code>1</code>后可为当前元素分配剩余可用空间。</p>
-<p><img src="media/flexShrink-1.png" alt="flexShrink-1"></p>
-<p><img src="media/flexShrink-2.png" alt="flexShrink-2"></p>
-<p><img src="media/flexShrink-3.png" alt="flexShrink-3"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144657.png" alt="flexShrink-1"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144805.png" alt="flexShrink-2"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144834.png" alt="flexShrink-3"></p>
 <h2 id="top-bottom-left-right-position"><a href="#top-bottom-left-right-position" class="headerlink" title="top bottom left right position"></a>top bottom left right position</h2><p>后布局的元素会覆盖先布局的元素。</p>
 <h3 id="position"><a href="#position" class="headerlink" title="position"></a>position</h3><h4 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h4><p>相对位置，默认值。</p>
 <h4 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h4><p>绝对位置，会影响其他子元素。</p>
-<p><img src="media/top-1.png" alt="top-1"></p>
-<p><img src="media/top-2.png" alt="top-2"></p>
-<p><img src="media/bottom.png" alt="bottom"></p>
-<p><img src="media/left.png" alt="left"></p>
-<p><img src="media/right.png" alt="right"></p>
-<p><img src="media/absolute.png" alt="absolute"></p>
-<p><img src="media/relative.png" alt="relative"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144858.png" alt="top-1"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144909.png" alt="top-2"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144923.png" alt="bottom"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112144935.png" alt="left"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145018.png" alt="right"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145041.png" alt="absolute"></p>
+<p><img src="https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210112145118.png" alt="relative"></p>
 
     </div>
 
