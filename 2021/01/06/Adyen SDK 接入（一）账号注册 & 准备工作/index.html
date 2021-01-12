@@ -27,7 +27,6 @@
 <meta property="og:site_name" content="小蘑菇的技术之路">
 <meta property="og:description" content="[TOC] Adyen SDK 与其他常见的 SDK 不太一样，API Key 与 Client Key 都是需要自己手动生成的，live 与 test 的环境区分也较为严格，想要申请 live 账号必须通过公司，这就导致个人测试时相对比较麻烦。 准备工作1. 注册账号https:&#x2F;&#x2F;docs.adyen.com&#x2F;checkout&#x2F;get-started#step-1-sign-up-for-a-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials.png">
 <meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials2.png">
 <meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials3.png">
 <meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials4.JPG">
@@ -35,13 +34,13 @@
 <meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-Merchant%20accounts2.png">
 <meta property="og:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-Test.JPG">
 <meta property="article:published_time" content="2021-01-06T03:41:32.000Z">
-<meta property="article:modified_time" content="2021-01-07T03:42:38.341Z">
+<meta property="article:modified_time" content="2021-01-12T05:53:18.652Z">
 <meta property="article:author" content="小蘑菇">
 <meta property="article:tag" content="iOS">
 <meta property="article:tag" content="SDK">
 <meta property="article:tag" content="支付">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials.png">
+<meta name="twitter:image" content="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/media/Adyen-API%20credentials2.png">
 
 <link rel="canonical" href="http://example.com/2021/01/06/Adyen%20SDK%20%E6%8E%A5%E5%85%A5%EF%BC%88%E4%B8%80%EF%BC%89%E8%B4%A6%E5%8F%B7%E6%B3%A8%E5%86%8C%20&%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C/">
 
@@ -207,7 +206,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-07 11:42:38" itemprop="dateModified" datetime="2021-01-07T11:42:38+08:00">2021-01-07</time>
+                <time title="修改时间：2021-01-12 13:53:18" itemprop="dateModified" datetime="2021-01-12T13:53:18+08:00">2021-01-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -235,7 +234,7 @@
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="1-注册账号"><a href="#1-注册账号" class="headerlink" title="1. 注册账号"></a>1. 注册账号</h3><p><a target="_blank" rel="noopener" href="https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account">https://docs.adyen.com/checkout/get-started#step-1-sign-up-for-a-test-account</a></p>
 <h3 id="2-生成-API-Key"><a href="#2-生成-API-Key" class="headerlink" title="2. 生成 API Key"></a>2. 生成 API Key</h3><p><a target="_blank" rel="noopener" href="https://docs.adyen.com/checkout/get-started#api-key">https://docs.adyen.com/checkout/get-started#api-key</a></p>
 <p>生成后 24 小时失效，保存后无法再显示。</p>
-<h4 id="1-选择-API-credentials"><a href="#1-选择-API-credentials" class="headerlink" title="1- 选择 API credentials"></a>1- 选择 API credentials</h4><p><img src="media/Adyen-API%20credentials.png" alt="Adyen-API credentials"></p>
+<h4 id="1-选择-API-credentials"><a href="#1-选择-API-credentials" class="headerlink" title="1- 选择 API credentials"></a>1- 选择 API credentials</h4><p>![Adyen-API credentials](<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/yanqizhao/blog-picture/main/img/Adyen-API">https://raw.githubusercontent.com/yanqizhao/blog-picture/main/img/Adyen-API</a> credentials.png)</p>
 <h4 id="2-选择-ws-Company-YourCompany"><a href="#2-选择-ws-Company-YourCompany" class="headerlink" title="2- 选择 ws@Company.{YourCompany}"></a>2- 选择 ws@Company.{YourCompany}</h4><p><img src="media/Adyen-API%20credentials2.png" alt="Adyen-API credentials2"></p>
 <h4 id="3-点击-Generate-New-API-Key"><a href="#3-点击-Generate-New-API-Key" class="headerlink" title="3- 点击 Generate New API Key"></a>3- 点击 Generate New API Key</h4><p><img src="media/Adyen-API%20credentials3.png" alt="Adyen-API credentials3"></p>
 <h4 id="4-复制-API-Key-并保存起来"><a href="#4-复制-API-Key-并保存起来" class="headerlink" title="4- 复制 API Key 并保存起来"></a>4- 复制 API Key 并保存起来</h4><h4 id="5-点击-Save-Generated-API-Key"><a href="#5-点击-Save-Generated-API-Key" class="headerlink" title="5- 点击 Save Generated API Key"></a>5- 点击 Save Generated API Key</h4><h4 id="6-弹窗确认"><a href="#6-弹窗确认" class="headerlink" title="6- 弹窗确认"></a>6- 弹窗确认</h4><p><img src="media/Adyen-API%20credentials4.JPG" alt="Adyen-API credentials4"></p>
@@ -347,20 +346,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
