@@ -2,14 +2,12 @@
 title: Adyen SDK 接入（二）
 date: 2021-01-06 17:19:21
 tags:
-- iOS
-- SDK
-- 支付
+  - iOS
+  - SDK
+  - 支付
 categories:
-- iOS 开发笔记
+  - iOS 开发笔记
 ---
-
-
 
 这是一份集成清单列表，里面罗列了集成所需的步骤。
 
