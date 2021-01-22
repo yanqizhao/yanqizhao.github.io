@@ -14,7 +14,9 @@ categories:
 
 > let 不能声明多次
 
-```
+
+
+```javascript
 var i = "global";
 
 function test () {
@@ -30,6 +32,11 @@ console log:
 "function"
 "global"
 */
+```
+
+
+
+```javascript
 var i = "global";
 
 function test () {
@@ -45,6 +52,13 @@ console log:
 "function"
 "function"
 */
+```
+
+
+
+
+
+```javascript
 function test () {
   i = "function";
   console.log(i);
@@ -58,6 +72,13 @@ console log:
 "function"
 "function"
 */
+```
+
+
+
+
+
+```javascript
 let i = "global";
 function test () {
   let i = "function";
@@ -72,6 +93,13 @@ console log:
 "function"
 "global"
 */
+```
+
+
+
+
+
+```javascript
 let i = "global";
 function test () {
   i = "function";
@@ -86,6 +114,13 @@ console log:
 "function"
 "function"
 */
+```
+
+
+
+
+
+```javascript
 function test () {
   let i = "function";
   console.log(i);
@@ -99,6 +134,10 @@ console log:
 Uncaught ReferenceError: i is not defined 
 */
 ```
+
+
+
+
 
 ### Object.freeze()
 

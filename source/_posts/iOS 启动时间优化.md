@@ -4,6 +4,7 @@ date: 2021-01-18 14:23:24
 tags:
 - iOS
 - 优化
+- 学习资料
 categories:
 - iOS 开发笔记
 ---
@@ -11,6 +12,12 @@ categories:
 
 
 [TOC]
+
+## 文档相关
+
+### Reducing Your App's Launch Time
+
+https://developer.apple.com/documentation/xcode/improving_your_app_s_performance/reducing_your_app_s_launch_time?language=objc
 
 
 
