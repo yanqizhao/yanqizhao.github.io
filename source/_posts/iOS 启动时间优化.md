@@ -151,6 +151,24 @@ https://www.infoq.cn/article/xjb3cysclphv5sh5923q
 
 
 
+### 抖音品质建设 - iOS启动优化《原理篇》
+
+https://mp.weixin.qq.com/s/3-Sbqe9gxdV6eI1f435BDg
+
+
+
+### 抖音品质建设 - iOS启动优化《实战篇》
+
+https://mp.weixin.qq.com/s/ekXfFu4-rmZpHwzFuKiLXw
+
+
+
+### iOS 优化篇 - 启动优化之Clang插桩实现二进制重排
+
+https://mp.weixin.qq.com/s/UlMAvuLuTcWgd3qkEAHYMA
+
+
+
 ### 今日头条 iOS 客户端启动速度优化
 
 https://juejin.cn/post/6844903649416577037
