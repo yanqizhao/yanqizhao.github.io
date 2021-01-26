@@ -71,6 +71,14 @@ https://github.com/Blankj/awesome-java-leetcode
 
 
 
+### Go
+
+https://github.com/halfrost/LeetCode-Go
+
+https://github.com/aQuaYi/LeetCode-in-Go
+
+
+
 ### 其他版本
 
 https://github.com/azl397985856/leetcode
@@ -78,6 +86,24 @@ https://github.com/azl397985856/leetcode
 https://github.com/apachecn/Interview
 
 https://github.com/soulmachine/leetcode
+
+
+
+## 数据结构与算法
+
+### Swift
+
+https://github.com/raywenderlich/swift-algorithm-club
+
+https://github.com/apple/swift-algorithms
+
+https://swift.org/blog/swift-algorithms/
+
+https://forums.swift.org/c/related-projects/algorithms/70
+
+https://medium.com/swift-algorithms-data-structures
+
+https://www.udacity.com/course/data-structures-and-algorithms-in-swift--ud1011
 
 
 
