@@ -1,6 +1,11 @@
-## Bazel 构建步骤
-
-
+---
+title: Bazel 构建步骤
+tags:
+- iOS
+- Bazel
+categories:
+- 构建工具
+---
 
 1. 根目录创建 `WORKSPACE` 文件，填写。
 2. 项目目录创建 `BUILD` 文件，填写。

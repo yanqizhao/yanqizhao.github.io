@@ -1,6 +1,11 @@
-# Bazel 问题
-
-
+---
+title: Bazel 问题
+tags:
+- iOS
+- Bazel
+categories:
+- 构建工具
+---
 
 ### Proxy address 127.0.0.1:xxxx is not a valid URL
 
