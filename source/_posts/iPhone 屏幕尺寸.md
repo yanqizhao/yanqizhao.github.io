@@ -23,3 +23,7 @@ categories:
 | 12 mini                      | 5.4 inch | 360*780pt      | 1080* 2340px   | @3x  |
 | 12/12 Pro                    | 6.1 inch | 390*844pt      | 1170* 2532px   | @3x  |
 | 12 Pro Max                   | 6.7 inch | 428*926pt      | 1284* 2778px   | @3x  |
+
+
+
+https://www.jianshu.com/p/507c89d456e1
