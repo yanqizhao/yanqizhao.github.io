@@ -276,7 +276,35 @@ AnimalFeed 有一个关联类型 CropType，它遵循 Crop 协议。Crop 有一�
 
 ![image-20220630134542175](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220630134542175.png)
 
-关联类型 CropType 有一个内嵌的关联类型 FeedType，遵循 AnimalFeed 协议，这个 AnimalFeed 也有一个内嵌的关联类型 CropType，遵循 Crop 协议。
+关联类型 CropType 有一个内嵌的关联类型 FeedType，遵循 AnimalFeed 协议，这个 AnimalFeed 也有一个内嵌的关联类型 CropType，遵循 Crop 协议，循环往复，关联类型在 AnimalFeed 与 Crop 之间互相遵循，不断切换，无限嵌套。
 
 ![image-20220630134846558](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220630134846558.png)
+
+对于 Crop 协议也是相同的情况，从遵循 Crop 协议的 Self 类型开始，有一个遵循 AnimalFeed 协议的关联类型 FeedType，这个关联类型有一个内嵌的关联类型 CropType，无限嵌套。
+
+让我们看看这些协议是否正确地模型化了实体类型之间的关系。回想一下在喂养动物之前，我们需要种植庄稼，然后会产出正确的动物要进食的食物。grow() 是 AnimalFeed 协议中的一个静态方法，这意味着它必须被遵循 AnimalFeed 协议的类型直接调用，而不是遵循 AnimalFeed 协议的具体类型的实例对象值。我们需要写下遵循 AnimalFeed 协议的类型的名称，但是我们有的只是一个遵循 Animal 协议的某个具体的类型，与 AnimalFeed 是不同的协议。
+
+我们可以用 type(of:) 方法得到 animal 实例的类型，我们知道它一定是遵循 Animal 协议的某个类型，Animal 有一个关联类型 FeedType，它遵循 AnimalFeed 协议。这个类可以被作为调用 grow() 方法的基本类型。
+
+AnimalFeed 协议的 grow() 方法返回一个值，这个值的类型是 AnimalFeed 的嵌套关联类型 CropType。我们知道 CropType 是遵循 Crop 协议的，所以可以对 CropType 的实例调用 harvest() 方法，但是我会得到什么呢？
+
+harvest() 被声明为返回一个遵循 Crop 协议的 FeedType 的关联类型。
+
+在我们的例子中，因为调用是基于 (some Animal).FeedType.CropType 的，harvest() 方法会输出一个 (some Animal).FeedType.CropType.FeedType。
+
+不幸的是，这是错误的类型。
+
+对 some Animal 调用 eat() 方法期待的返回值类型是 (some Animal).FeedType，而不是 (some Animal).FeedType.CropType.FeedType。
+
+![image-20220630143840680](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220630143840680.png)
+
+这个程序类型是有问题的。
+
+![image-20220630163559858](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220630163559858.png)
+
+这些协议的定义，并没有真实地保证如果我们从 AnimalFeed 类型开始，然后调用 grow() 和 harvest()，我们会得到与 AnimalFeed 开始时相同的类型，也就是我们所期待的动物进食食物的类型。
+
+另一种理解它的方式是，这些协议的定义太宽泛了，它们并没有准确地模型化我们对这些实体类型之间关系的期望，为了理解这是为什么，我们看一下 Hay 和 Alfalfa 类型。
+
+
 
