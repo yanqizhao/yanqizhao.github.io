@@ -27,3 +27,11 @@ categories:
 
 
 https://www.jianshu.com/p/507c89d456e1
+
+[少数派](https://sspai.com/post/63214)
+
+https://steppark.net/15978209110755.html
+
+![9e12c3bbf1674051a52734ab93f2c72d](https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210204201631.png)
+
+![img](https://raw.githubusercontent.com/yanqizhao/picture/main/img/20210223190349.png)

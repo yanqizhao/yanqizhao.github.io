@@ -27,6 +27,12 @@ https://www.youtube.com/channel/UC5xDNEcvb1vgw3lE21Ack2Q
 
 
 
+### Java 版
+
+https://space.bilibili.com/59546029/
+
+
+
 ### Python 版
 
 https://www.youtube.com/channel/UCRCqgMdsAHK3yfvW4en6JpA
