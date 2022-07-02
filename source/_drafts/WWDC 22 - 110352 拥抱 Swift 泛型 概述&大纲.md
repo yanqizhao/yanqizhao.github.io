@@ -78,7 +78,7 @@
 
 ![image-20220626165151422](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220626165151422.png)
 
-###### some
+###### feed(_ animal: some Animal)
 
 ![image-20220626170002361](/Users/yanqizhao/Library/Application Support/typora-user-images/image-20220626170002361.png)
 

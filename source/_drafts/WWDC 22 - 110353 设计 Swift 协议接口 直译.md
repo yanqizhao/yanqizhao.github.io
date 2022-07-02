@@ -310,13 +310,13 @@ harvest() 被声明为返回一个遵循 Crop 协议的 FeedType 的关联类型
 
 现在想象一下我重构这部分代码，我不小心修改了 Alfalfa 的 harvest() 方法的返回值类型，返回 Scratch 而不是 Hay。
 
-![IMG_2469](../../../../../../../Downloads/IMG_2469.JPG)
+![IMG_2469](/Users/yanqizhao/Downloads/IMG_2469.JPG)
 
 被我不小心改掉之后，实体类型仍然满足 AnimalFeed 和 Crop 协议的要求，尽管我们违背了不改变 grow() 和 harvest() 方法返回值类型 crop 的初衷。
 
 让我们再看一次 AnimalFeed 这个协议，真正的问题是我们定义了太多不同的关联类型了。
 
-![IMG_2470](../../../../../../../Downloads/IMG_2470.JPG)
+![IMG_2470](/Users/yanqizhao/Downloads/IMG_2470.JPG)
 
 我们需要写下这两种关联类型，它们是两种相同的实体类型，这将避免遵循协议时错误的实体类型。
 
@@ -328,7 +328,7 @@ harvest() 被声明为返回一个遵循 Crop 协议的 FeedType 的关联类型
 
 添加一个相同类型的要求采用了一个遵循 AnimalFeed 协议的实体类型的限制。
 
-![IMG_2471](../../../../../../../Downloads/IMG_2471.JPG)
+![IMG_2471](/Users/yanqizhao/Downloads/IMG_2471.JPG)
 
 在这个相同类型要求里，我们声明了 Self.CropType.FeedType = Self，在图里看起来是什么样子呢，我们可以对其进行可视化。
 
@@ -336,19 +336,17 @@ harvest() 被声明为返回一个遵循 Crop 协议的 FeedType 的关联类型
 
 不在使用一个无穷的嵌套关联类型塔，取而代之的是，我把这些关系折叠为一对相关的关联类型。
 
-![IMG_2472](../../../../../../../Downloads/IMG_2472.JPG)
+![IMG_2472](/Users/yanqizhao/Downloads/IMG_2472.JPG)那 Crop 协议怎么办，这里，Crop 的 FeedType 也折叠到一对类型里，但我们仍然多了一个关联类型。
 
-那 Crop 协议怎么办，这里，Crop 的 FeedType 也折叠到一对类型里，但我们仍然多了一个关联类型。
-
-![IMG_2473](../../../../../../../Downloads/IMG_2473.JPG)
+![IMG_2473](/Users/yanqizhao/Downloads/IMG_2473.JPG)
 
 我们想说，Crop 的 FeedType 的 CropType 也与开始的 Crop 相同。
 
-![IMG_2474](../../../../../../../Downloads/IMG_2474.JPG)
+![IMG_2474](/Users/yanqizhao/Downloads/IMG_2474.JPG)
 
 现在这两个协议都配备了相同类型的要求，我们可以重新调用一次 feedAnimal() 方法了。
 
-![IMG_2475](../../../../../../../Downloads/IMG_2475.JPG)
+![IMG_2475](/Users/yanqizhao/Downloads/IMG_2475.JPG)
 
 我们还是从 some Animal 开始，然后我们得到了 some Animal 的 FeedType，我们知道 FeedType 遵循 AnimalFeed 协议。
 
@@ -360,7 +358,7 @@ harvest() 被声明为返回一个遵循 Crop 协议的 FeedType 的关联类型
 
 这是两部分协议遵循的实体类型：
 
-![IMG_2476](../../../../../../../Downloads/IMG_2476.JPG)
+![IMG_2476](/Users/yanqizhao/Downloads/IMG_2476.JPG)
 
 首先我们有 Cow、Hay、Alfalfa，然后我们有 Chicken、Scratch、Millet，注意我们有三个协议精确地模型化了每部分的三个实体类型的关系。
 
