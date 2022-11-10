@@ -8,9 +8,9 @@
           { label: 'Address', value: 'Glenfield, AUK, 6029' },
           { label: 'Phone', value: '027-386-8521' },
           { label: 'E-mail', value: 'yanqizhao.career@gmail.com', link: 'mailto:' },
-          { label: 'LinkedIn', value: 'linkedin/in/yanqizhao', link: 'https://' },
+          { label: 'LinkedIn', value: 'linkedin.com/in/yanqizhao', link: 'https://' },
           { label: 'GitHub', value: 'github.com/yanqizhao', link: 'https://' },
-          { label: 'Website', value: 'yanqizhao.com', link: 'https://' },
+          { label: 'Website', value: 'yanqizhao.com/about', link: 'https://' },
         ],
       },
       skill: {
@@ -85,7 +85,7 @@
   function getContentTemplate(){
     const content = {
       introduction:
-        'Dynamic and creative iOS software engineer with 4.5 years professional experience. Eager to support the dev team at CDEInc. with top-notch coding skills. In previous roles,doubled code-efficiency of ABC Inc., and increased customer retention by 30% among others.',
+        'Dynamic and creative iOS software engineer with 4.5 years professional experience. Eager to support the development squad with deep understanding of sound code practices and deep expertise in iOS tooling and technology.',
       experience: {
         title: 'Work Experience',
         list: [
@@ -94,9 +94,9 @@
             period: '2021-03 - 2022-09',
             location: 'HelloBike, Hangzhou, China',
             descriptions: [
-              'Decreased 50% customer complaints by refining shared account.',
-              'Reduced 50% workload by accomplishing Flutter pages of account component.',
-              'Saved 30% cost (100K RMB annually) by accomplishing quick login via mobile providers, Alipay and Apple channel.',
+              'Refined shared account to reduce customer complaints by 50%.',
+              'Accomplished Flutter pages of account component to decrease workload by 50%',
+              'Integrated quick login via mobile providers, Alipay and Apple channel and made 100K RMB annual savings.',
               'Collaborated with scrum team to fulfil requirements of more than 35 versions of release.',
               'Conducted code review meetings to detect weaknesses and improve product quality per week.',
             ],
@@ -111,9 +111,9 @@
           {
             job: 'Senior iOS Software Engineer',
             period: '2020-09 - 2021-03',
-            location: 'Wholee & Club Factory, Hangzhou, China',
+            location: 'Club Factory & Wholee, Hangzhou, China',
             descriptions: [
-              'Reduced 50% workload by building React Native pages of account component.',
+              'Built React Native pages of account component to reduce workload by 50%.',
               'Integrated mobile payment platforms such as Stripe and Adyen for better payment experience of users.'
             ],
             achievement: {
@@ -129,7 +129,7 @@
             period: '2017-04 - 2019-02',
             location: 'Bilibili, Shanghai, China',
             descriptions: [
-              `Reduced 20% launch time by removing unnecessary frameworks and decreasing the use of ‘+(void)load' method.`,
+              `Optimized launch time via removing unnecessary frameworks and decreasing the use of ‘+(void)load' method by 20% cut.`,
               'Implemented faster load of video page for better user experience by redesigning the order of tasks and utilizing pre-load URL.',
               'Refactored networking component and launch component to save developing time by 30%.'
             ],
