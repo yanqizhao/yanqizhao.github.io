@@ -1,0 +1,154 @@
+@media (max-width: 768px) {
+  main {
+    display: block !important;
+  }
+
+  .side {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+.page {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+}
+
+.page .section-headline {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.page .section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.page .section-text {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.page .container {
+  display: flex;
+  flex-direction: column;
+  width: 840px;
+  min-height: 1188px;
+  box-shadow: 0 2px 4px 1px rgb(0 0 0 / 15%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 132px;
+  background: #373d48;
+  color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+header .title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+header .sub-title {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+.side {
+  height: 100%;
+  width: 280px;
+  background: #f4f4f4;
+}
+
+.content, .side {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page .divider {
+  height: 1px;
+  margin: 8px 0;
+  background: #cfd0d0;
+}
+
+.page .reverse-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.page .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.page .dark-dot {
+  background: #3a3a3a;
+}
+
+.page .light-dot {
+  background: #CFD0D0;
+}
+
+.page .dark-grey {
+  color: #3a3a3a;
+}
+
+.page .highlight {
+  color: #0088F9;
+}
+
+.page .fw-bold {
+  font-weight: bold;
+}
+
+.page .mr4 {
+  margin-right: 4px;
+}
+
+.page .mt6 {
+  margin-top: 6px;
+}
+
+.page .mb12 {
+  margin-bottom: 12px;
+}
+
+.page .mt12 {
+  margin-top: 12px;
+}
+
+.page .mt18 {
+  margin-top: 18px;
+}
+
+.page .mr18 {
+  margin-right: 18px;
+}
+
+.page .mb24 {
+  margin-bottom: 24px;
+}
+
+.page .mt42 {
+  margin-top: 42px;
+}
