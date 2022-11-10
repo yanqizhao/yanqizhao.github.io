@@ -94,6 +94,11 @@ main {
   justify-content: flex-end;
 }
 
+.page .row {
+  display: flex;
+  align-items: center;
+}
+
 .page .dot {
   width: 16px;
   height: 16px;
@@ -121,12 +126,20 @@ main {
   font-weight: bold;
 }
 
+.page .width84 {
+  width: 84px;
+}
+
 .page .mr4 {
   margin-right: 4px;
 }
 
 .page .mt6 {
   margin-top: 6px;
+}
+
+.page .mr12 {
+  margin-right: 12px;
 }
 
 .page .mb12 {

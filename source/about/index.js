@@ -182,7 +182,10 @@
           {
             time: '2021-2022',
             description: 'WWDC Reference Writer ',
-            highlight: '10089 110352/110353'
+            linkList: [
+              { label: '10089', link: 'https://xiaozhuanlan.com/topic/6354917082' },
+              { label: '110352/110353', link: 'https://xiaozhuanlan.com/topic/7651204893' },
+            ],
           },
           {
             time: '2019-09',
@@ -220,10 +223,12 @@
       <div class="section-headline mt42">${communityConference.title}</div>
       <div class="divider"></div>
       ${communityConference.list.map((everyCommunityConference, index) => `
-        <div class="section-text">
-          <span class="fw-bold mr18">${everyCommunityConference.time}</span>
-          ${everyCommunityConference.description}
-          ${everyCommunityConference.highlight ? `<span class="highlight">${everyCommunityConference.highlight}</span>` : ''}
+        <div class="section-text row">
+          <span class="width84 fw-bold mr18">${everyCommunityConference.time}</span>
+          <span>
+            ${everyCommunityConference.description}
+            ${everyCommunityConference.linkList ? everyCommunityConference.linkList.map((everyLink) => `<a class="highlight mr4" target="_blank" href="${everyLink.link}">${everyLink.label}</a>`).join('') : ''}
+          </span>
         </div>
       `).join('')}
     `;
