@@ -5,7 +5,7 @@
       contact: {
         title: 'Contact',
         list: [
-          { label: 'Address', value: 'Glenfield, AUK, 6029' },
+          { label: 'Address', value: 'Glenfield, AUK, 6029 \n (Valid open work visa and willing to relocate)' },
           { label: 'Phone', value: '027-386-8521' },
           { label: 'E-mail', value: 'yanqizhao.career@gmail.com', link: 'mailto:' },
           { label: 'LinkedIn', value: 'linkedin.com/in/yanqizhao', link: 'https://' },
@@ -17,23 +17,23 @@
         title: 'Skills',
         maxLevel: 5,
         list: [
+          { skill: 'Swift', level: 5 },
+          { skill: 'SwiftUI & Combine', level: 5 },
+          { skill: 'MVVM Design', level: 5 },
           { skill: 'Objective-C', level: 5 },
-          { skill: 'Foundation Framework', level: 4 },
-          { skill: 'UIKit Framework', level: 4 },
-          { skill: '3rd party SDKs and API(S)integration', level: 4 },
-          { skill: 'API design knowledge', level: 4 },
-          { skill: 'Multi-threading', level: 4 },
-          { skill: 'MVC Design', level: 4 },
-          { skill: 'Git version control', level: 4 },
-          { skill: 'iOS versions and devices', level: 3 },
-          { skill: 'Agile and Scrum workflow development', level: 3 },
-          { skill: 'Code reviews', level: 3 },
-          { skill: 'MVVM Design', level: 3 },
-          { skill: 'CI/CD', level: 3 },
-          { skill: 'Swift', level: 2 },
-          { skill: 'JavaScript', level: 2 },
-          { skill: 'React Native', level: 2 },
-          { skill: 'Flutter', level: 2 },
+          { skill: '3rd party SDKs and API(S)integration', level: 5 },
+          { skill: 'XCTest & XCUITest', level: 5 },
+          { skill: 'API design knowledge', level: 5 },
+          { skill: 'Multi-threading', level: 5 },
+          { skill: 'MVC Design', level: 5 },
+          { skill: 'Git version control', level: 5 },
+          { skill: 'iOS versions and devices', level: 5 },
+          { skill: 'Agile and Scrum workflow development', level: 5 },
+          { skill: 'Code reviews', level: 5 },
+          { skill: 'CI/CD', level: 4 },
+          { skill: 'JavaScript', level: 3 },
+          { skill: 'React Native', level: 3 },
+          { skill: 'Flutter', level: 3 },
         ],
       },
       language: {
@@ -85,7 +85,7 @@
   function getContentTemplate(){
     const content = {
       introduction:
-        'Dynamic and creative iOS software engineer with 4.5 years professional experience. Eager to support the development squad with deep understanding of sound code practices and deep expertise in iOS tooling and technology.',
+        'Dynamic and creative iOS software engineer with more than 7 years professional experience. Eager to support the development squad with deep understanding of sound code practices and deep expertise in iOS tooling and technology.',
       experience: {
         title: 'Work Experience',
         list: [
