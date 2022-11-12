@@ -85,7 +85,7 @@
   function getContentTemplate(){
     const content = {
       introduction:
-        'Dynamic and creative iOS software engineer with more than 7 years professional experience. Eager to support the development squad with deep understanding of sound code practices and deep expertise in iOS tooling and technology.',
+        'Dynamic and creative iOS software engineer with more than 7 years of professional experience. Eager to support the development squad with deep understanding of sound code practices and deep expertise in iOS tooling and technology.',
       experience: {
         title: 'Work Experience',
         list: [
