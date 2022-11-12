@@ -5,7 +5,7 @@
       contact: {
         title: 'Contact',
         list: [
-          { label: 'Address', value: 'Glenfield, AUK, 6029 \n (Valid open work visa and willing to relocate)' },
+          { label: 'Address', value: 'Glenfield, AUK, 6029</br>(Valid open work visa and willing to relocate)' },
           { label: 'Phone', value: '027-386-8521' },
           { label: 'E-mail', value: 'yanqizhao.career@gmail.com', link: 'mailto:' },
           { label: 'LinkedIn', value: 'linkedin.com/in/yanqizhao', link: 'https://' },
