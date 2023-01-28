@@ -106,3 +106,5 @@ deploy:
   type: git
   repo: git@github.com:yanqizhao/yanqizhao.github.io.git
   branch: main
+  name: yanqizhao
+  email: yanqizhao3@gmail.com
