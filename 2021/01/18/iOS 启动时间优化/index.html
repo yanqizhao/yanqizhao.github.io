@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="[TOC] 文档相关Reducing Your App’s Launch Timehttps:&#x2F;&#x2F;developer.apple.com&#x2F;documentation&#x2F;xcode&#x2F;improving_your_app_s_performance&#x2F;reducing_your_app_s_launch_time?language&#x3D;objc WWDC 相关视频2012-235 iOS App 性能统计 m">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS 启动时间优化">
+<meta property="og:url" content="http://example.com/2021/01/18/iOS%20%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E4%BC%98%E5%8C%96/index.html">
+<meta property="og:site_name" content="小蘑菇的技术之路">
+<meta property="og:description" content="[TOC] 文档相关Reducing Your App’s Launch Timehttps:&#x2F;&#x2F;developer.apple.com&#x2F;documentation&#x2F;xcode&#x2F;improving_your_app_s_performance&#x2F;reducing_your_app_s_launch_time?language&#x3D;objc WWDC 相关视频2012-235 iOS App 性能统计 m">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-01-18T01:23:24.000Z">
+<meta property="article:modified_time" content="2023-01-27T04:20:07.209Z">
+<meta property="article:author" content="小蘑菇">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="学习资料">
+<meta property="article:tag" content="优化">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/01/18/iOS%20%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E4%BC%98%E5%8C%96/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>iOS 启动时间优化 | 小蘑菇的技术之路</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小蘑菇的技术之路</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/18/iOS%20%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E4%BC%98%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小蘑菇">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小蘑菇的技术之路">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          iOS 启动时间优化
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-01-18 14:23:24" itemprop="dateCreated datePublished" datetime="2021-01-18T14:23:24+13:00">2021-01-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-01-27 17:20:07" itemprop="dateModified" datetime="2023-01-27T17:20:07+13:00">2023-01-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">iOS 开发笔记</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>[TOC]</p>
+<h2 id="文档相关"><a href="#文档相关" class="headerlink" title="文档相关"></a>文档相关</h2><h3 id="Reducing-Your-App’s-Launch-Time"><a href="#Reducing-Your-App’s-Launch-Time" class="headerlink" title="Reducing Your App’s Launch Time"></a>Reducing Your App’s Launch Time</h3><p><a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/xcode/improving_your_app_s_performance/reducing_your_app_s_launch_time?language=objc">https://developer.apple.com/documentation/xcode/improving_your_app_s_performance/reducing_your_app_s_launch_time?language=objc</a></p>
+<h2 id="WWDC-相关视频"><a href="#WWDC-相关视频" class="headerlink" title="WWDC 相关视频"></a>WWDC 相关视频</h2><h3 id="2012-235-iOS-App-性能"><a href="#2012-235-iOS-App-性能" class="headerlink" title="2012-235 iOS App 性能"></a>2012-235 iOS App 性能</h3><p>统计 main 函数到 didFinishLaunching 的时间</p>
+<p>iOS App Performance: Responsiveness</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2012/235/">https://developer.apple.com/videos/play/wwdc2012/235/</a></p>
+<h3 id="2016-406-优化启动时间"><a href="#2016-406-优化启动时间" class="headerlink" title="2016-406 优化启动时间"></a>2016-406 优化启动时间</h3><p>启动各个阶段所做的事情 主要为 main 函数前</p>
+<p>Optimizing App Startup Time</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2016/406/">https://developer.apple.com/videos/play/wwdc2016/406/</a></p>
+<p><a target="_blank" rel="noopener" href="http://yulingtianxia.com/blog/2016/10/30/Optimizing-App-Startup-Time/">http://yulingtianxia.com/blog/2016/10/30/Optimizing-App-Startup-Time/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/3b0256192e4e">https://www.jianshu.com/p/3b0256192e4e</a></p>
+<h3 id="2016-418-Time-Profile-的使用"><a href="#2016-418-Time-Profile-的使用" class="headerlink" title="2016-418 Time Profile 的使用"></a>2016-418 Time Profile 的使用</h3><p>Using Time Profiler in Instruments</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2016/418/">https://developer.apple.com/videos/play/wwdc2016/418/</a></p>
+<h3 id="2017-413-App-启动时间：过去、现在与未来"><a href="#2017-413-App-启动时间：过去、现在与未来" class="headerlink" title="2017-413 App 启动时间：过去、现在与未来"></a>2017-413 App 启动时间：过去、现在与未来</h3><p>App Startup Time: Past, Present, and Future</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2017/413/">https://developer.apple.com/videos/play/wwdc2017/413/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/96f66b0c943c">https://www.jianshu.com/p/96f66b0c943c</a></p>
+<h3 id="2017-706-GCD-的使用"><a href="#2017-706-GCD-的使用" class="headerlink" title="2017-706 GCD 的使用"></a>2017-706 GCD 的使用</h3><p>Modernizing Grand Central Dispatch Usage</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2017/706/">https://developer.apple.com/videos/play/wwdc2017/706/</a></p>
+<h3 id="2018-220-高性能自动布局"><a href="#2018-220-高性能自动布局" class="headerlink" title="2018-220 高性能自动布局"></a>2018-220 高性能自动布局</h3><p>High Performance Auto Layout</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2018/220/">https://developer.apple.com/videos/play/wwdc2018/220/</a></p>
+<h3 id="2018-405-通过日志记录衡量性能"><a href="#2018-405-通过日志记录衡量性能" class="headerlink" title="2018-405 通过日志记录衡量性能"></a>2018-405 通过日志记录衡量性能</h3><p>Measuring Performance Using Logging</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2018/405/">https://developer.apple.com/videos/play/wwdc2018/405/</a></p>
+<h3 id="2018-407-实现出色-App-性能的实用方法"><a href="#2018-407-实现出色-App-性能的实用方法" class="headerlink" title="2018-407 实现出色 App 性能的实用方法"></a>2018-407 实现出色 App 性能的实用方法</h3><p>Practical Approaches to Great App Performance</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2018/407/">https://developer.apple.com/videos/play/wwdc2018/407/</a></p>
+<h3 id="2019-411-Instruments-的使用"><a href="#2019-411-Instruments-的使用" class="headerlink" title="2019-411 Instruments 的使用"></a>2019-411 Instruments 的使用</h3><p>Getting Started with Instruments</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2019/411/">https://developer.apple.com/videos/play/wwdc2019/411/</a></p>
+<h3 id="2019-423-优化-App-启动"><a href="#2019-423-优化-App-启动" class="headerlink" title="2019-423 优化 App 启动"></a>2019-423 优化 App 启动</h3><p>启动各个阶段可以做的优化以及 App Launch 的使用示例</p>
+<p>Optimizing App Launch</p>
+<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2019/423/">https://developer.apple.com/videos/play/wwdc2019/423/</a></p>
+<p><a target="_blank" rel="noopener" href="https://xiaozhuanlan.com/topic/4690823715">https://xiaozhuanlan.com/topic/4690823715</a></p>
+<h2 id="博客文章"><a href="#博客文章" class="headerlink" title="博客文章"></a>博客文章</h2><h3 id="iOS应用启动性能优化资料（汇总）"><a href="#iOS应用启动性能优化资料（汇总）" class="headerlink" title="iOS应用启动性能优化资料（汇总）"></a>iOS应用启动性能优化资料（汇总）</h3><p><a target="_blank" rel="noopener" href="https://everettjf.github.io/2018/08/06/ios-launch-performance-collection/">https://everettjf.github.io/2018/08/06/ios-launch-performance-collection/</a></p>
+<h3 id="iOS-如何优化-App-的启动耗时"><a href="#iOS-如何优化-App-的启动耗时" class="headerlink" title="iOS 如何优化 App 的启动耗时"></a>iOS 如何优化 App 的启动耗时</h3><p><a target="_blank" rel="noopener" href="https://gsl201600.github.io/2020/04/01/iOS%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96App%E7%9A%84%E5%90%AF%E5%8A%A8%E8%80%97%E6%97%B6/">https://gsl201600.github.io/2020/04/01/iOS%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96App%E7%9A%84%E5%90%AF%E5%8A%A8%E8%80%97%E6%97%B6/</a></p>
+<h3 id="APP-启动速度优化"><a href="#APP-启动速度优化" class="headerlink" title="APP 启动速度优化"></a>APP 启动速度优化</h3><p>描述了启动各个阶段所做的事情</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/@EdisonFan/%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96-872cbff15859">https://medium.com/@EdisonFan/%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96-872cbff15859</a></p>
+<h3 id="深入探索-iOS-启动速度优化"><a href="#深入探索-iOS-启动速度优化" class="headerlink" title="深入探索 iOS 启动速度优化"></a>深入探索 iOS 启动速度优化</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844904127068110862">https://juejin.cn/post/6844904127068110862</a></p>
+<h3 id="高德-APP-启动耗时剖析与优化实践（iOS-篇）"><a href="#高德-APP-启动耗时剖析与优化实践（iOS-篇）" class="headerlink" title="高德 APP 启动耗时剖析与优化实践（iOS 篇）"></a>高德 APP 启动耗时剖析与优化实践（iOS 篇）</h3><p><a target="_blank" rel="noopener" href="https://www.infoq.cn/article/xjb3cysclphv5sh5923q">https://www.infoq.cn/article/xjb3cysclphv5sh5923q</a></p>
+<h3 id="抖音品质建设-iOS启动优化《原理篇》"><a href="#抖音品质建设-iOS启动优化《原理篇》" class="headerlink" title="抖音品质建设 - iOS启动优化《原理篇》"></a>抖音品质建设 - iOS启动优化《原理篇》</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/3-Sbqe9gxdV6eI1f435BDg">https://mp.weixin.qq.com/s/3-Sbqe9gxdV6eI1f435BDg</a></p>
+<h3 id="抖音品质建设-iOS启动优化《实战篇》"><a href="#抖音品质建设-iOS启动优化《实战篇》" class="headerlink" title="抖音品质建设 - iOS启动优化《实战篇》"></a>抖音品质建设 - iOS启动优化《实战篇》</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ekXfFu4-rmZpHwzFuKiLXw">https://mp.weixin.qq.com/s/ekXfFu4-rmZpHwzFuKiLXw</a></p>
+<h3 id="iOS-优化篇-启动优化之Clang插桩实现二进制重排"><a href="#iOS-优化篇-启动优化之Clang插桩实现二进制重排" class="headerlink" title="iOS 优化篇 - 启动优化之Clang插桩实现二进制重排"></a>iOS 优化篇 - 启动优化之Clang插桩实现二进制重排</h3><p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/UlMAvuLuTcWgd3qkEAHYMA">https://mp.weixin.qq.com/s/UlMAvuLuTcWgd3qkEAHYMA</a></p>
+<h3 id="今日头条-iOS-客户端启动速度优化"><a href="#今日头条-iOS-客户端启动速度优化" class="headerlink" title="今日头条 iOS 客户端启动速度优化"></a>今日头条 iOS 客户端启动速度优化</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903649416577037">https://juejin.cn/post/6844903649416577037</a></p>
+<h3 id="马蜂窝-iOS-App-启动治理：回归用户体验"><a href="#马蜂窝-iOS-App-启动治理：回归用户体验" class="headerlink" title="马蜂窝 iOS App 启动治理：回归用户体验"></a>马蜂窝 iOS App 启动治理：回归用户体验</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903841410842638">https://juejin.cn/post/6844903841410842638</a></p>
+<h3 id="美团外卖-iOS-App-冷启动治理"><a href="#美团外卖-iOS-App-冷启动治理" class="headerlink" title="美团外卖 iOS App 冷启动治理"></a>美团外卖 iOS App 冷启动治理</h3><p><a target="_blank" rel="noopener" href="https://tech.meituan.com/2018/12/06/waimai-ios-optimizing-startup.html">https://tech.meituan.com/2018/12/06/waimai-ios-optimizing-startup.html</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/iOS/" rel="tag"># iOS</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" rel="tag"># 学习资料</a>
+              <a href="/tags/%E4%BC%98%E5%8C%96/" rel="tag"># 优化</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/01/11/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%20&%20%E7%BD%91%E7%AB%99%20&%20%E5%91%BD%E4%BB%A4/" rel="prev" title="常用工具 & 网站 & 命令">
+      <i class="fa fa-chevron-left"></i> 常用工具 & 网站 & 命令
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/01/21/%E7%83%AD%E4%BF%AE%E5%A4%8D/" rel="next" title="热修复">
+      热修复 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E7%9B%B8%E5%85%B3"><span class="nav-number">1.</span> <span class="nav-text">文档相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reducing-Your-App%E2%80%99s-Launch-Time"><span class="nav-number">1.1.</span> <span class="nav-text">Reducing Your App’s Launch Time</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WWDC-%E7%9B%B8%E5%85%B3%E8%A7%86%E9%A2%91"><span class="nav-number">2.</span> <span class="nav-text">WWDC 相关视频</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2012-235-iOS-App-%E6%80%A7%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">2012-235 iOS App 性能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2016-406-%E4%BC%98%E5%8C%96%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4"><span class="nav-number">2.2.</span> <span class="nav-text">2016-406 优化启动时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2016-418-Time-Profile-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.3.</span> <span class="nav-text">2016-418 Time Profile 的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2017-413-App-%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%EF%BC%9A%E8%BF%87%E5%8E%BB%E3%80%81%E7%8E%B0%E5%9C%A8%E4%B8%8E%E6%9C%AA%E6%9D%A5"><span class="nav-number">2.4.</span> <span class="nav-text">2017-413 App 启动时间：过去、现在与未来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2017-706-GCD-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.5.</span> <span class="nav-text">2017-706 GCD 的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2018-220-%E9%AB%98%E6%80%A7%E8%83%BD%E8%87%AA%E5%8A%A8%E5%B8%83%E5%B1%80"><span class="nav-number">2.6.</span> <span class="nav-text">2018-220 高性能自动布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2018-405-%E9%80%9A%E8%BF%87%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E8%A1%A1%E9%87%8F%E6%80%A7%E8%83%BD"><span class="nav-number">2.7.</span> <span class="nav-text">2018-405 通过日志记录衡量性能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2018-407-%E5%AE%9E%E7%8E%B0%E5%87%BA%E8%89%B2-App-%E6%80%A7%E8%83%BD%E7%9A%84%E5%AE%9E%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">2.8.</span> <span class="nav-text">2018-407 实现出色 App 性能的实用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2019-411-Instruments-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.9.</span> <span class="nav-text">2019-411 Instruments 的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2019-423-%E4%BC%98%E5%8C%96-App-%E5%90%AF%E5%8A%A8"><span class="nav-number">2.10.</span> <span class="nav-text">2019-423 优化 App 启动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0"><span class="nav-number">3.</span> <span class="nav-text">博客文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS%E5%BA%94%E7%94%A8%E5%90%AF%E5%8A%A8%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E8%B5%84%E6%96%99%EF%BC%88%E6%B1%87%E6%80%BB%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">iOS应用启动性能优化资料（汇总）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96-App-%E7%9A%84%E5%90%AF%E5%8A%A8%E8%80%97%E6%97%B6"><span class="nav-number">3.2.</span> <span class="nav-text">iOS 如何优化 App 的启动耗时</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#APP-%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96"><span class="nav-number">3.3.</span> <span class="nav-text">APP 启动速度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%B4%A2-iOS-%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96"><span class="nav-number">3.4.</span> <span class="nav-text">深入探索 iOS 启动速度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E5%BE%B7-APP-%E5%90%AF%E5%8A%A8%E8%80%97%E6%97%B6%E5%89%96%E6%9E%90%E4%B8%8E%E4%BC%98%E5%8C%96%E5%AE%9E%E8%B7%B5%EF%BC%88iOS-%E7%AF%87%EF%BC%89"><span class="nav-number">3.5.</span> <span class="nav-text">高德 APP 启动耗时剖析与优化实践（iOS 篇）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%96%E9%9F%B3%E5%93%81%E8%B4%A8%E5%BB%BA%E8%AE%BE-iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96%E3%80%8A%E5%8E%9F%E7%90%86%E7%AF%87%E3%80%8B"><span class="nav-number">3.6.</span> <span class="nav-text">抖音品质建设 - iOS启动优化《原理篇》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%96%E9%9F%B3%E5%93%81%E8%B4%A8%E5%BB%BA%E8%AE%BE-iOS%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96%E3%80%8A%E5%AE%9E%E6%88%98%E7%AF%87%E3%80%8B"><span class="nav-number">3.7.</span> <span class="nav-text">抖音品质建设 - iOS启动优化《实战篇》</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS-%E4%BC%98%E5%8C%96%E7%AF%87-%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96%E4%B9%8BClang%E6%8F%92%E6%A1%A9%E5%AE%9E%E7%8E%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%87%8D%E6%8E%92"><span class="nav-number">3.8.</span> <span class="nav-text">iOS 优化篇 - 启动优化之Clang插桩实现二进制重排</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1-iOS-%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%90%AF%E5%8A%A8%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96"><span class="nav-number">3.9.</span> <span class="nav-text">今日头条 iOS 客户端启动速度优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A9%AC%E8%9C%82%E7%AA%9D-iOS-App-%E5%90%AF%E5%8A%A8%E6%B2%BB%E7%90%86%EF%BC%9A%E5%9B%9E%E5%BD%92%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C"><span class="nav-number">3.10.</span> <span class="nav-text">马蜂窝 iOS App 启动治理：回归用户体验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BE%8E%E5%9B%A2%E5%A4%96%E5%8D%96-iOS-App-%E5%86%B7%E5%90%AF%E5%8A%A8%E6%B2%BB%E7%90%86"><span class="nav-number">3.11.</span> <span class="nav-text">美团外卖 iOS App 冷启动治理</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小蘑菇</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小蘑菇</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
